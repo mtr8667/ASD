@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	// replace this getElementById function with var element = $(document); note: I might not need this because I think the jQuery will let me call anything I need directly - so we're in a holding pattern
 	
 	function ge(x) {
-		var 	theElement =   .getElementById(x);
+		var 	theElement =   document.getElementById(x);
 	return 	theElement;
 	}
 	
@@ -35,7 +35,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	}	
 	
 	// Find the value of a selected radial button ,
-	// I think this should also be handled by JQM
+	// This needs to be changed to jQuery this is used with the saveLocal function
+	//
 	function getSelectedRadio(){
 		var radios = document.forms[0].cost;
 		for( var i=0; i < radios.length; i++){
@@ -303,7 +304,9 @@ window.addEventListener("DOMContentLoaded", function(){
  	var clearProjectsLink = ge('clearProjectsLink');
  	clearProjectsLink.addEventListener("click", deleteProject); 
  	var save = ge("saveProject");
- 	save.addEventListener("click", validate);	
+ 	save.addEventListener("click", validate);
+ 	// the above functions manipulating the form need to be changed to jQuery
+ 	// $	
  });
  
  

@@ -77,8 +77,42 @@ $(function(){
 		projectform = $( "#projectform" ),
 		formerrorslink = $("#formerrorslink")
 	;
-			
-	// Validate function for the form
+// Write data from localStorage to the browser
+	function getProjects(){
+		toggleControls("on");
+		if(localStorage.length === 0 ){
+			alert("There is no data in local storage so default data has been added.");
+			autoFillData();
+		}
+		var makeDiv	= document.createElement("div");
+		makeDiv.setAttribute("id", "items");
+		var makeList = document.createElement("ul");
+		makeDiv.appendChild(makeList);
+		document.body.appendChild(makeDiv);
+		ge("items").style.display = "block";
+		for( var i = 0, len=localStorage.length; i<len; i++){
+			var makeLi = document.createElement("li");
+			var linksLi	= document.createElement("li");
+			makeList.appendChild(makeLi);
+			var key = localStorage.key(i);
+			var value = localStorage.getItem(key);
+			// Convert the string from localStorage value back to an object using JSON.parse
+			var obj = JSON.parse(value);
+			var makeSubList = document.createElement("ul");
+			makeLi.appendChild(makeSubList);
+			getImage(obj.project[1], makeSubList);
+			for(var n in obj){
+				var makeSubLi = document.createElement("li");
+				makeSubList.appendChild(makeSubLi);
+				var optSubText = obj[n][0]+" "+obj[n][1];
+				makeSubLi.innerHTML = optSubText;
+				makeSubList.appendChild(linksLi);
+				}
+				// create links/buttons (edit & delete) for each project in local storage
+				makeItemLinks(localStorage.key(i), linksLi); 
+		}
+	}		
+// Validate function for the form
 	projectform.validate({
 		invalidHandler: function(form, validator){
 			// this bring up the pop up error dialog
@@ -97,7 +131,16 @@ $(function(){
 			parseProjectForm(data);
 		}
 	});
-
+	// Set link & submit Click Events 
+ 	/*
+ 	var showProjectsLink = ge("showProjectsLink");
+ 	showProjectsLink.addEventListener("click", getProjects);
+ 	var clearProjectsLink = ge('clearProjectsLink');
+ 	clearProjectsLink.addEventListener("click", deleteProject); 
+ 	var save = ge("saveProject");
+ 	save.addEventListener("click", validate);
+ 	*/
+ 	$("#getProjects").on("click", getProjects); 
 	
 	
 	
