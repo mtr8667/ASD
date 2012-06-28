@@ -3,13 +3,22 @@
 // Project 
 // May 7, 2012
 // Wait until the DOM is ready 	
+
+// this document ready function will be replaced by $(function(){}); in the apps main.js - currently I'm modifying the main.js of the Bronze ap from MIU and will be copying and pasting this code into the apps main.js
+ 
 window.addEventListener("DOMContentLoaded", function(){	
 	// getElementById function
+	// replace this getElementById function with var element = $(document); note: I might not need this because I think the jQuery will let me call anything I need directly - so we're in a holding pattern
+	
 	function ge(x) {
-		var 	theElement = document.getElementById(x);
+		var 	theElement =   .getElementById(x);
 	return 	theElement;
 	}
+	
+	
 	// Create select field element and populate it with options (types of projects)
+	// this is now being handled by JQM so I don't think I need to use jQuery
+	
 	function makeProjectTypes (){
 		var 	formTag = document.getElementsByTagName("form"), //formTag is an array of all the form tags
 				selectLi = ge("select"),
@@ -24,7 +33,9 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 		selectLi.appendChild(makeSelect);		
 	}	
+	
 	// Find the value of a selected radial button ,
+	// I think this should also be handled by JQM
 	function getSelectedRadio(){
 		var radios = document.forms[0].cost;
 		for( var i=0; i < radios.length; i++){
