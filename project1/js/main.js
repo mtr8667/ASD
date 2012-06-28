@@ -81,18 +81,18 @@ $(function(){
 	function toggleControls(n){
 		switch(n){
 			case "on":
-					ge("projectForm").style.display = "none";
-					ge("clearProjectsLink").style.display = "inline";
-					ge("showProjectsLink").style.display = "none";
-					ge("newProject").style.display = "inline";
-					ge("footer").style.display = "none";
+					$("projectForm").css("display", "none");
+					$("clearProjectsLink").css("display", "inline");
+					$("showProjectsLink").css("display", "none");
+					$("newProject").css("display", "inline");
+					$("footer").css("display", "none");
 					break;
 			case "off":
-					ge("projectForm").style.display = "block";
-					ge("clearProjectsLink").style.display = "inline";
-					ge("showProjectsLink").style.display = "inline";
-					ge("newProject").style.display = "none";
-					ge("items").style.display = "none";
+					$("projectForm").css("display", "block");
+					$("clearProjectsLink").css("display", "inline");
+					$("showProjectsLink").css("display", "inline");
+					$("newProject").css("display", "none");
+					$("items").css("display", "none");
 					break;
 			default:
 					return false;
