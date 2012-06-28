@@ -129,7 +129,7 @@ $(function(){
 		localStorage.setItem(id, JSON.stringify(item));	
 		alert("Your project has been saved successfully!");			
 	} 
-v
+
 
 // Write data from localStorage to the browser
 	function getProjects(){
