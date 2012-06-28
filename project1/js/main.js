@@ -73,9 +73,31 @@ $(document).bind('pageinit',function(){
 // Just above is the JavaScript I used for the Gold MIU app - below is my attempt at jQuery ... here we go
 // function for document ready - this will wrap our entire code.
 $(function(){
-	var element = $(document);
-	
-	
+	var element = $(document),
+		projectform = $( "#projectform" ),
+		formerrorslink = $("#formerrorslink")
+	;
+			
+	// Validate function for the form
+	projectform.validate({
+		invalidHandler: function(form, validator){
+			// this bring up the pop up error dialog
+			formerrorslink.click();
+			var html = ' ';
+			for(var key in validator.submitted){
+				var label = $('label[for^="'+ key +'"]').not('[generated]');
+				var legend = label.closest('fieldset').find('.ui-controlgroup-label');
+				var fieldName = legend.length ? legend.text() : label.text();
+				html += '<li>' + fieldName + '</li>';
+			};
+			$('#showerrors ul').html(html);
+		},
+		submitHandler: function(){
+			var 	data = projectform.serializeArray();
+			parseProjectForm(data);
+		}
+	});
+
 	
 	
 	
