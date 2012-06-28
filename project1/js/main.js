@@ -99,6 +99,38 @@ $(function(){
 		}
 	}
 
+// the key is only generated when we are editing a project so if there is no key its a new project
+	function saveLocal(key){
+		if(!key){
+			var 	id 						= Math.floor(Math.random()*10000001);
+		}else{
+			//set the id to the existing key we're editing so the data will be modified and we'll save over the original data
+			//this key has been passed along from the editSaveProject eventListener to the validate function then passed here
+			// into storeLocal function
+			id = key;
+		}
+		// get all the form field values and store them in an object.
+		// the object properties contain an array with the form label and input value.
+		getSelectedRadio();
+		getCheckboxValue();
+		var	item 					= {};
+				item.project		= ["Project Type:", ge("project").value];
+				item.pname 		= ["Project Name:", ge("pname").value];
+				item.fname 		= ["First Name:", ge("fname").value];
+				item.lname 			= ["Last Name:", ge("lname").value];
+				item.email 			= ["Email:", ge("email").value];
+				item.phone 			= ["Phone:", ge("phone").value];			
+				item.emailOkay 	= ["Communicate Via email:", emailOkay];
+				item.cost			= ["Price per sq ft.", cost];			
+				item.priority 		= ["Priority", ge("priority").value];
+				item.startDate		= ["Start Date", ge("startDate").value];
+				item.jobNotes 		= ["Job Notes", ge("jobNotes").value];
+		// Save data into local storage : use stringify to convert our object to a string.
+		localStorage.setItem(id, JSON.stringify(item));	
+		alert("Your project has been saved successfully!");			
+	} 
+v
+
 // Write data from localStorage to the browser
 	function getProjects(){
 		toggleControls("on");
