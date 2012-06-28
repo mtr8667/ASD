@@ -170,7 +170,7 @@ $(function(){
 	// actual json object data for this to work will come from json.js which is loaded from HTML page
 	// the main.js and json.js files can see eachothers variables - that's why we can loop through json in the main.js file
 	function autoFillData(){
-		for( var n in json){
+		for(var n in json){
 			var 	id 	= Math.floor(Math.random()*10000001);
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		}
