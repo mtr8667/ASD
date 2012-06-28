@@ -77,6 +77,28 @@ $(function(){
 		projectform = $( "#projectform" ),
 		formerrorslink = $("#formerrorslink")
 	;
+// Toggle control 
+	function toggleControls(n){
+		switch(n){
+			case "on":
+					ge("projectForm").style.display = "none";
+					ge("clearProjectsLink").style.display = "inline";
+					ge("showProjectsLink").style.display = "none";
+					ge("newProject").style.display = "inline";
+					ge("footer").style.display = "none";
+					break;
+			case "off":
+					ge("projectForm").style.display = "block";
+					ge("clearProjectsLink").style.display = "inline";
+					ge("showProjectsLink").style.display = "inline";
+					ge("newProject").style.display = "none";
+					ge("items").style.display = "none";
+					break;
+			default:
+					return false;
+		}
+	}
+
 // Write data from localStorage to the browser
 	function getProjects(){
 		toggleControls("on");
