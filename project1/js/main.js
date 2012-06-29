@@ -79,7 +79,8 @@ $(function(){
 	;
 // Find the value of a selected radial button ,
 	// 
-	//
+	// I believe these are now being handled by the plugin
+	/*
 	function getSelectedRadio(){
 		var radios = document.forms[0].cost;
 		for( var i=0; i < radios.length; i++){
@@ -96,7 +97,7 @@ $(function(){
 		}
 	}	
 
-
+*/
 // Toggle control 
 	function toggleControls(n){
 		switch(n){
@@ -118,7 +119,7 @@ $(function(){
 					return false;
 		}
 	}
-
+/*
 // the key is only generated when we are editing a project so if there is no key its a new project
 	function saveLocal(key){
 		if(!key){
@@ -150,7 +151,7 @@ $(function(){
 		alert("Your project has been saved successfully!");			
 	} 
 
-
+*/
 // Write data from localStorage to the browser
 	function getProjects(){
 		toggleControls("on");
@@ -180,7 +181,7 @@ $(function(){
 				var makeSubLi = $("li");
 				$("makeSubList").append("makeSubLi");
 				var optSubText = obj[n][0]+" "+obj[n][1];
-				makeSubLi.innerHTML = optSubText;
+				$("makeSubLi").html("optSubText");
 				$("makeSubList").append("linksLi");
 				}
 				// create links/buttons (edit & delete) for each project in local storage
@@ -204,19 +205,19 @@ $(function(){
 		editLink.href = "#";
 		editLink.key = key;
 		var editText = "Edit Project";
-		editLink.addEventListener("click", editItem);
-		editLink.innerHTML = editText;
-		linksLi.appendChild(editLink);
+		$("editLink").bind("click", editItem);
+		$("editLink").html("editText");
+		$("linksLi").append("editLink");
 		// add line break
-		var breakTag = document.createElement("br");
-		linksLi.appendChild(breakTag);
-		var deleteLink = document.createElement("a");
+		var breakTag = $("br");
+		$("linksLi").append("breakTag");
+		var deleteLink = $("a");
 		deleteLink.href = "#";
 		deleteLink.key = key;
 		var deleteText = "Delete Project";
-		deleteLink.addEventListener("click", deleteItem);
-		deleteLink.innerHTML = deleteText;
-		linksLi.appendChild(deleteLink);
+		$("deleteLink").bind("click", deleteItem);
+		$("deleteLink").html("deleteText");
+		$("linksLi").append("deleteLink");
 	}
 
 // function to allow us to pull a project from local storage and edit an item
@@ -226,12 +227,12 @@ $(function(){
 		// show the add project form
 		toggleControls("off");
 		// pull in the data of the current project from local storage
-		ge("project").value 	= item.project[1];
-		ge("pname").value 	= item.pname[1];
-		ge("fname").value 	= item.fname[1];
-		ge("lname").value 		= item.lname[1];
-		ge("email").value 		= item.email[1];
-		ge("phone").value 		= item.phone[1];
+		$("project").value 	= item.project[1];
+		$("pname").value 	= item.pname[1];
+		$("fname").value 	= item.fname[1];
+		$("lname").value 		= item.lname[1];
+		$("email").value 		= item.email[1];
+		$("phone").value 		= item.phone[1];
 		var radios = document.forms[0].cost;
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].value == "low" && item.cost[1] == "low"){
@@ -243,16 +244,16 @@ $(function(){
 			}
 		}
 		if(item.emailOkay[1] == "Yes"){
-			ge("emailOkay").setAttribute("checked", "checked");
+			$("emailOkay").attr("checked", "checked");
 		}
-		ge("priority").value = item.priority[1];
-		ge("startDate").value = item.startDate[1];
-		ge("jobNotes").value = item.jobNotes[1];
+		$("priority").value = item.priority[1];
+		$("startDate").value = item.startDate[1];
+		$("jobNotes").value = item.jobNotes[1];
 		// remove the initial eventListener from the save project button
 		save.removeEventListener("click", saveLocal);
 		// change save project buttom value to say edit project button
-		ge("saveProject").value = "Edit Project";
-		var editSaveProject = ge("saveProject");
+		$("saveProject").value = "Edit Project";
+		var editSaveProject = $("saveProject");
 		// saving key value in this function as a property of the editSaveProject event 
 		// so we can use that value when we save the edited project
 		editSaveProject.addEventListener("click", validate);
@@ -307,8 +308,16 @@ $(function(){
 		submitHandler: function(){
 			var 	data = projectform.serializeArray();
 			parseProjectForm(data);
+			
 		}
 	});
+	var parseProjectForm = function(data){
+// uses form data here 
+	//console.log(data);
+	//localStorage.setItem(key, JSON.stringify(item));	
+	$("parseProjectForm").data(data);
+		alert("Your project has been saved successfully!");		
+	};
 	// Set link & submit Click Events 
  	/*
  	var showProjectsLink = ge("showProjectsLink");
@@ -320,6 +329,7 @@ $(function(){
  	*/
  	$("#getProjects").on("click", getProjects); 
 	$("#deleteProject").on("click", deleteProject);
+	
 	
 	
 	

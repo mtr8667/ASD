@@ -73,6 +73,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 	// the key is only generated when we are editing a project so if there is no key its a new project
+/*	
 	function saveLocal(key){
 		if(!key){
 			var 	id 						= Math.floor(Math.random()*10000001);
@@ -102,6 +103,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		localStorage.setItem(id, JSON.stringify(item));	
 		alert("Your project has been saved successfully!");			
 	} 
+	*/
 	// Write data from localStorage to the browser
 	function getProjects(){
 		toggleControls("on");
