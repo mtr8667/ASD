@@ -175,6 +175,17 @@ $(function(){
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		}
 	}
+	
+	function deleteProject(){
+		if(localStorage.length === 0){
+			alert("There are no projects to delete.")
+		}else{
+			localStorage.clear();
+			alert("All projects have been deleted!");
+			window.location.reload();
+			return false;
+		}
+	}
 
 // Validate function for the form
 	projectform.validate({
