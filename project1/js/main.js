@@ -175,7 +175,16 @@ $(function(){
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		}
 	}
-	
+
+// Get the project image for current project being displayed
+	function getImage(projectName, makeSubList){
+		var imageLi = document.createElement("li");
+		makeSubList.appendChild(imageLi);
+		var newImg = document.createElement("img");
+		var setSrc = newImg	.setAttribute("src", "images/" + projectName + ".png");
+		imageLi.appendChild(newImg);
+	}
+// delete project functions
 	function deleteProject(){
 		if(localStorage.length === 0){
 			alert("There are no projects to delete.")
@@ -216,7 +225,7 @@ $(function(){
  	save.addEventListener("click", validate);
  	*/
  	$("#getProjects").on("click", getProjects); 
-	
+	$("#deleteProject").on("click", deleteProject);
 	
 	
 	
