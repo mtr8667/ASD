@@ -77,6 +77,26 @@ $(function(){
 		projectform = $( "#projectform" ),
 		formerrorslink = $("#formerrorslink")
 	;
+// Find the value of a selected radial button ,
+	// This needs to be changed to jQuery this is used with the saveLocal function
+	//
+	function getSelectedRadio(){
+		var radios = document.forms[0].cost;
+		for( var i=0; i < radios.length; i++){
+			if(radios[i].checked){
+			cost = radios[i].value;
+			}
+		}
+	}
+	function getCheckboxValue(){
+		if(ge("emailOkay").checked){
+			emailOkay	=	ge("emailOkay").value;
+		}else{
+			emailOkay 	=	"No"
+		}
+	}	
+
+
 // Toggle control 
 	function toggleControls(n){
 		switch(n){
