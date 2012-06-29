@@ -238,6 +238,17 @@ $(function(){
 		editSaveProject.key = this.key;
 	}
 
+// 
+	function deleteItem(){
+		var ask = confirm("Are you sure you want to delete this project?");
+		if(ask){
+			localStorage.removeItem(this.key);
+			window.location.reload();
+		}else{
+			alert("Project was not deleted.");
+		}
+	}
+
 // Get the project image for current project being displayed
 	function getImage(projectName, makeSubList){
 		var imageLi = document.createElement("li");
