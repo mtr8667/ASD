@@ -115,12 +115,12 @@ $(function(){
 		getCheckboxValue();
 		var	item 					= {};
 				item.project		= ["Project Type:", ge("project").value];
-				item.pname 		= ["Project Name:", ge("pname").value];
-				item.fname 		= ["First Name:", ge("fname").value];
+				item.pname 			= ["Project Name:", ge("pname").value];
+				item.fname 			= ["First Name:", ge("fname").value];
 				item.lname 			= ["Last Name:", ge("lname").value];
 				item.email 			= ["Email:", ge("email").value];
 				item.phone 			= ["Phone:", ge("phone").value];			
-				item.emailOkay 	= ["Communicate Via email:", emailOkay];
+				item.emailOkay 		= ["Communicate Via email:", emailOkay];
 				item.cost			= ["Price per sq ft.", cost];			
 				item.priority 		= ["Priority", ge("priority").value];
 				item.startDate		= ["Start Date", ge("startDate").value];
@@ -174,6 +174,68 @@ $(function(){
 			var 	id 	= Math.floor(Math.random()*10000001);
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		}
+	}
+
+// This function is going to create the link/buttons for each project when accessed
+	// make item links/buttons for each project
+	function makeItemLinks(key, linksLi){
+		var editLink = document.createElement("a");
+		editLink.href = "#";
+		editLink.key = key;
+		var editText = "Edit Project";
+		editLink.addEventListener("click", editItem);
+		editLink.innerHTML = editText;
+		linksLi.appendChild(editLink);
+		// add line break
+		var breakTag = document.createElement("br");
+		linksLi.appendChild(breakTag);
+		var deleteLink = document.createElement("a");
+		deleteLink.href = "#";
+		deleteLink.key = key;
+		var deleteText = "Delete Project";
+		deleteLink.addEventListener("click", deleteItem);
+		deleteLink.innerHTML = deleteText;
+		linksLi.appendChild(deleteLink);
+	}
+
+// function to allow us to pull a project from local storage and edit an item
+	function editItem(){
+		var value = localStorage.getItem(this.key);
+		var item = JSON.parse(value);
+		// show the add project form
+		toggleControls("off");
+		// pull in the data of the current project from local storage
+		ge("project").value 	= item.project[1];
+		ge("pname").value 	= item.pname[1];
+		ge("fname").value 	= item.fname[1];
+		ge("lname").value 		= item.lname[1];
+		ge("email").value 		= item.email[1];
+		ge("phone").value 		= item.phone[1];
+		var radios = document.forms[0].cost;
+		for(var i=0; i<radios.length; i++){
+			if(radios[i].value == "low" && item.cost[1] == "low"){
+				radios[i].setAttribute("checked", "checked");
+			}else if(radios[i].value == "medium" && item.cost[1] == "medium"){
+				radios[i].setAttribute("checked", "checked");
+			}else if(radios[i].value == "high" && item.cost[1] == "high"){
+				radios[i].setAttribute("checked", "checked");
+			}
+		}
+		if(item.emailOkay[1] == "Yes"){
+			ge("emailOkay").setAttribute("checked", "checked");
+		}
+		ge("priority").value = item.priority[1];
+		ge("startDate").value = item.startDate[1];
+		ge("jobNotes").value = item.jobNotes[1];
+		// remove the initial eventListener from the save project button
+		save.removeEventListener("click", saveLocal);
+		// change save project buttom value to say edit project button
+		ge("saveProject").value = "Edit Project";
+		var editSaveProject = ge("saveProject");
+		// saving key value in this function as a property of the editSaveProject event 
+		// so we can use that value when we save the edited project
+		editSaveProject.addEventListener("click", validate);
+		editSaveProject.key = this.key;
 	}
 
 // Get the project image for current project being displayed
