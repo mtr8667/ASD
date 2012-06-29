@@ -78,7 +78,7 @@ $(function(){
 		formerrorslink = $("#formerrorslink")
 	;
 // Find the value of a selected radial button ,
-	// This needs to be changed to jQuery this is used with the saveLocal function
+	// 
 	//
 	function getSelectedRadio(){
 		var radios = document.forms[0].cost;
@@ -89,8 +89,8 @@ $(function(){
 		}
 	}
 	function getCheckboxValue(){
-		if(ge("emailOkay").checked){
-			emailOkay	=	ge("emailOkay").value;
+		if($("emailOkay").checked){
+			emailOkay	=	$("emailOkay").value;
 		}else{
 			emailOkay 	=	"No"
 		}
@@ -134,17 +134,17 @@ $(function(){
 		getSelectedRadio();
 		getCheckboxValue();
 		var	item 					= {};
-				item.project		= ["Project Type:", ge("project").value];
-				item.pname 			= ["Project Name:", ge("pname").value];
-				item.fname 			= ["First Name:", ge("fname").value];
-				item.lname 			= ["Last Name:", ge("lname").value];
-				item.email 			= ["Email:", ge("email").value];
-				item.phone 			= ["Phone:", ge("phone").value];			
+				item.project		= ["Project Type:", $("project").value];
+				item.pname 			= ["Project Name:", $("pname").value];
+				item.fname 			= ["First Name:", $("fname").value];
+				item.lname 			= ["Last Name:", $("lname").value];
+				item.email 			= ["Email:", $("email").value];
+				item.phone 			= ["Phone:", $("phone").value];			
 				item.emailOkay 		= ["Communicate Via email:", emailOkay];
 				item.cost			= ["Price per sq ft.", cost];			
-				item.priority 		= ["Priority", ge("priority").value];
-				item.startDate		= ["Start Date", ge("startDate").value];
-				item.jobNotes 		= ["Job Notes", ge("jobNotes").value];
+				item.priority 		= ["Priority", $("priority").value];
+				item.startDate		= ["Start Date", $("startDate").value];
+				item.jobNotes 		= ["Job Notes", $("jobNotes").value];
 		// Save data into local storage : use stringify to convert our object to a string.
 		localStorage.setItem(id, JSON.stringify(item));	
 		alert("Your project has been saved successfully!");			
