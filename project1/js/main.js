@@ -158,29 +158,30 @@ $(function(){
 			alert("There is no data in local storage so default data has been added.");
 			autoFillData();
 		}
-		var makeDiv	= document.createElement("div");
-		makeDiv.setAttribute("id", "items");
-		var makeList = document.createElement("ul");
-		makeDiv.appendChild(makeList);
-		document.body.appendChild(makeDiv);
-		$("items").css("display", "block");
+		var makeDiv	= $("div");
+		$("makeDiv").attr("id", "items");
+		var makeList = $("ul");
+		$("makeDiv").append("makeList");
+		$("document.body").append("makeDiv");
+		//$("items").css("display", "block");
+		$("items").show();
 		for( var i = 0, len=localStorage.length; i<len; i++){
-			var makeLi = document.createElement("li");
-			var linksLi	= document.createElement("li");
-			makeList.appendChild(makeLi);
+			var makeLi = $("li");
+			var linksLi	= $("li");
+			$("makeList").append("makeLi");
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
 			// Convert the string from localStorage value back to an object using JSON.parse
 			var obj = JSON.parse(value);
-			var makeSubList = document.createElement("ul");
-			makeLi.appendChild(makeSubList);
+			var makeSubList = $("ul");
+			$("makeLi").append("makeSubList");
 			getImage(obj.project[1], makeSubList);
 			for(var n in obj){
-				var makeSubLi = document.createElement("li");
-				makeSubList.appendChild(makeSubLi);
+				var makeSubLi = $("li");
+				$("makeSubList").append("makeSubLi");
 				var optSubText = obj[n][0]+" "+obj[n][1];
 				makeSubLi.innerHTML = optSubText;
-				makeSubList.appendChild(linksLi);
+				$("makeSubList").append("linksLi");
 				}
 				// create links/buttons (edit & delete) for each project in local storage
 				makeItemLinks(localStorage.key(i), linksLi); 
@@ -199,7 +200,7 @@ $(function(){
 // This function is going to create the link/buttons for each project when accessed
 	// make item links/buttons for each project
 	function makeItemLinks(key, linksLi){
-		var editLink = document.createElement("a");
+		var editLink = $("a");
 		editLink.href = "#";
 		editLink.key = key;
 		var editText = "Edit Project";
@@ -271,11 +272,11 @@ $(function(){
 
 // Get the project image for current project being displayed
 	function getImage(projectName, makeSubList){
-		var imageLi = document.createElement("li");
-		makeSubList.appendChild(imageLi);
-		var newImg = document.createElement("img");
-		var setSrc = newImg	.setAttribute("src", "images/" + projectName + ".png");
-		imageLi.appendChild(newImg);
+		var imageLi = $("li");
+		$("makeSubList").append("imageLi");
+		var newImg = $("img");
+		var setSrc = $("newImg").attr("src", "images/" + projectName + ".png");
+		$("imageLi").append("newImg");
 	}
 // delete project functions
 	function deleteProject(){
