@@ -18,7 +18,7 @@ thie above will only work in browsers that support W3C
 jQuery equivilant
 
 $(function(){
-	$('somelink').bind('click', myFn);
+	$('somelink').on('click', myFn);
 });
 
 */
@@ -43,7 +43,7 @@ $(function(){
 // the hasClass is a good way to search through you document to fins all the elements that have a certain class - in the example above it would be all the nav(s) that have a certain class 
 
 /*
-$(document).bind('pageinit',function(){
+$(document).on('pageinit',function(){
 	
 	var 	projectform = $( "#projectform" ),
 			formerrorslink = $("#formerrorslink")
@@ -205,7 +205,7 @@ $(function(){
 		editLink.href = "#";
 		editLink.key = key;
 		var editText = "Edit Project";
-		$("editLink").bind("click", editItem);
+		$("editLink").on("click", editItem);
 		$("editLink").html("editText");
 		$("linksLi").append("editLink");
 		// add line break
@@ -215,7 +215,7 @@ $(function(){
 		deleteLink.href = "#";
 		deleteLink.key = key;
 		var deleteText = "Delete Project";
-		$("deleteLink").bind("click", deleteItem);
+		$("deleteLink").on("click", deleteItem);
 		$("deleteLink").html("deleteText");
 		$("linksLi").append("deleteLink");
 	}
