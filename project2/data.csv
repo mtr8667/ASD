@@ -1,172 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<projects>
+
+
+projectType,pName,fName,lName,email,phone,emailOkay,cost,priority,startDate,jobNotes
+
+Kitchen,Richter Kitchen,Matthew,Richter,matt@gorichter.com,9085006304,Yes,high,9,2012-5-1,Re-due tile floor and add three new custom cabinets	
 	
-	<project1>
-		<projectType>Kitchen</projectType>
-		<pName>Richter Kitchen</pName>
-		<fName>Matthew</fName>
-		<lName>Richter</lName>
-		<email>matt@gorichter.com</email>
-		<phone>9085006304</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>high</cost>
-		<priority>9</priority>
-		<startDate>2012-5-1</startDate>
-		<jobNotes>Re-due tile floor and add three new custom cabinets</jobNotes>
-	</project1>
+Addition,Anderson Addition,Chris,Anderson,chris@anderson.com,4075006304,Yes,medium,7,2012-6-1,600 sq ft addition of the family room
 	
-	<project2>
-		<projectType>Addition</projectType>
-		<pName>Anderson Addition</pName>
-		<fName>Chris</fName>
-		<lName>Anderson</lName>
-		<email>chris@anderson.com</email>
-		<phone>4075006304</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>medium</cost>
-		<priority>7</priority>
-		<startDate>2012-6-1</startDate>
-		<jobNotes>600 sq ft addition of the family room</jobNotes>
-	</project2>
+Lavator,Richter Lavatory,Matthew,Richter,matt@gorichter.com,9085006304,>Yes,high,9,2012-5-1,Place new face-frame on the vanity and remove bench seat in shower and re-tile
 	
-	<project3>
-		<projectType>Lavatory</projectType>
-		<pName>Richter Lavatory</pName>
-		<fName>Matthew</fName>
-		<lName>Richter</lName>
-		<email>matt@gorichter.com</email>
-		<phone>9085006304</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>high</cost>
-		<priority>9</priority>
-		<startDate>2012-5-1</startDate>
-		<jobNotes>Place new face-frame on the vanity and remove bench seat in shower and re-tile</jobNotes>
-	</project3>
+Roof,Stokes Roof,Bryan,Stokes,bryan@SB.com,9086542727,Yes,medium,6,2012-7-13,Take off existing two layers and repair any rotten wood
 	
-	<project4>
-		<projectType>Roof</projectType>
-		<pName>Stokes Roof</pName>
-		<fName>Bryan</fName>
-		<lName>Stokes</lName>
-		<email>bryan@SB.com</email>
-		<phone>9086542727</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>medium</cost>
-		<priority>6</priority>
-		<startDate>2012-7-13</startDate>
-		<jobNotes>Take off existing two layers and repair any rotten wood</jobNotes>
-	</project4>
+Basement,Jones Basement,Travis,Jones,traivs@jones.com,9088393933,Yes,low,8,2012-8-1,finish similar to the McKensie job
 	
-	<project5>
-		<projectType>Basement</projectType>
-		<pName>Jones Basement</pName>
-		<fName>Travis</fName>
-		<lName>Jones</lName>
-		<email>traivs@jones.com</email>
-		<phone>9088393933</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>low</cost>
-		<priority>8</priority>
-		<startDate>2012-8-1</startDate>
-		<jobNotes>finish similar to the McKensie job</jobNotes>
-	</project5>
+Addition,Trivella Addition,Adrienne,Trivella,ade@trivella.com,9086372524,Yes,high,9,2012-9-1,400 square feet off the kitchen, tile floor anderson windows, match exterior
 	
-	<project6>
-		<projectType>Addition</projectType>
-		<pName>Trivella Addition</pName>
-		<fName>Adrienne</fName>
-		<lName>Trivella</lName>
-		<email>ade@trivella.com</email>
-		<phone>9086372524</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>high</cost>
-		<priority>9</priority>
-		<startDate>2012-9-1</startDate>
-		<jobNotes>400 square feet off the kitchen, tile floor anderson windows, match exterior</jobNotes>
-	</project6>
+Addition,Oraschin Addition,David,Oraschin,dave@oraschin.com,9086270412,Yes,high,5,2012-11-1,blow out family room wall and add 600 square foot great room, match exterior
 	
-	<project7>
-		<projectType>Addition</projectType>
-		<pName>Oraschin Addition</pName>
-		<fName>David</fName>
-		<lName>Oraschin</lName>
-		<email>dave@oraschin.com</email>
-		<phone>9086270412</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>high</cost>
-		<priority>5</priority>
-		<startDate>2012-11-1</startDate>
-		<jobNotes>blow out family room wall and add 600 square foot great room, match exterior</jobNotes>
-	</project7>
+Lavatory,Mantes Lavatory,Gerry,Mantes,gerry@mantes.com,9081232930,Yes,medium,7,2012-6-14,new toilet, bath tub, vanity and shower
 	
-	<project8>
-		<projectType>Lavatory</projectType>
-		<pName>Mantes Lavatory</pName>
-		<fName>Gerry</fName>
-		<lName>Mantes</lName>
-		<email>gerry@mantes.com</email>
-		<phone>9081232930</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>medium</cost>
-		<priority>7</priority>
-		<startDate>2012-6-14</startDate>
-		<jobNotes>new toilet, bath tub, vanity and shower</jobNotes>
-	</project8>
+Lavatory,Smith Lavatory,John,Smith,john@smith.com,9082549986,Yes,low,8,2012-7-1,New shower tile and floor
 	
-	<project9>
-		<projectType>Lavatory</projectType>
-		<pName>Smith Lavatory</pName>
-		<fName>John</fName>
-		<lName>Smith</lName>
-		<email>john@smith.com</email>
-		<phone>9082549986</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>low</cost>
-		<priority>8</priority>
-		<startDate>2012-7-1</startDate>
-		<jobNotes>New shower tile and floor</jobNotes>
-	</project9>
+Roof,Roth Roof,Joe,Roth,joe@roth.com,9085317283,Yes,high,8,2012-8-6,Roof over existing roof no dumpster required
+
+Lavatory,Stires Lavatory,Kim,Stires,kim@wfb.com,9084737272,Yes,high,6,2012-8-2,Gut the entire bathroom and replace everything
 	
-	<project10>
-		<projectType>Roof</projectType>
-		<pName>Roth Roof</pName>
-		<fName>Joe</fName>
-		<lName>Roth</lName>
-		<email>joe@roth.com</email>
-		<phone>9085317283</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>high</cost>
-		<priority>8</priority>
-		<startDate>2012-8-6</startDate>
-		<jobNotes>Roof over existing roof no dumpster required</jobNotes>
-	</project10>
-	
-	<project11>
-		<projectType>Lavatory</projectType>
-		<pName>Stires Lavatory</pName>
-		<fName>Kim</fName>
-		<lName>Stires</lName>
-		<email>kim@wfb.com</email>
-		<phone>9084737272</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>high</cost>
-		<priority>6</priority>
-		<startDate>2012-8-2</startDate>
-		<jobNotes>Gut the entire bathroom and replace everything</jobNotes>
-	</project11>
-	
-	<project12>
-		<projectType>Addition</projectType>
-		<pName>Papio Addition</pName>
-		<fName>Matthew</fName>
-		<lName>Papio</lName>
-		<email>matt@papio.com</email>
-		<phone>9736473829</phone>
-		<emailOkay>Yes</emailOkay>
-		<cost>high</cost>
-		<priority>9</priority>
-		<startDate>2012-9-4</startDate>
-		<jobNotes>new floor, vanity and bath	
+Addition,Papio Addition,Matthew,Papio,matt@papio.com,9736473829,Yes,high,9,2012-9-4,new floor, vanity and bath	
+
 Basement,Dill Basement,James,Dill,james@dill.com,9732781166,Yes,high,8,2012-7-9,finish entire basement sheetrock and tile floor with built-ins
 	
 Basement,Kelly Basement,Jeff,Kelly,jeff@kelly.com,9084738383,Yes,medium,7,2012-9-23,wine closet and sheetrock with cork floor
