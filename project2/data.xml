@@ -44,115 +44,115 @@
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Roof</projectType>
+		<pName>Stokes Roof</pName>
+		<fName>Bryan</fName>
+		<lName>Stokes</lName>
+		<email>bryan@SB.com</email>
+		<phone>9086542727</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>medium</cost>
+		<priority>6</priority>
+		<startDate>2012-7-13</startDate>
+		<jobNotes>Take off existing two layers and repair any rotten wood</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Basement</projectType>
+		<pName>Jones Basement</pName>
+		<fName>Travis</fName>
+		<lName>Jones</lName>
+		<email>traivs@jones.com</email>
+		<phone>9088393933</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>low</cost>
+		<priority>8</priority>
+		<startDate>2012-8-1</startDate>
+		<jobNotes>finish similar to the McKensie job</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Addition</projectType>
+		<pName>Trivella Addition</pName>
+		<fName>Adrienne</fName>
+		<lName>Trivella</lName>
+		<email>ade@trivella.com</email>
+		<phone>9086372524</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>9</priority>
+		<startDate>2012-9-1</startDate>
+		<jobNotes>400 square feet off the kitchen, tile floor anderson windows, match exterior</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Addition</projectType>
+		<pName>Oraschin Addition</pName>
+		<fName>David</fName>
+		<lName>Oraschin</lName>
+		<email>dave@oraschin.com</email>
+		<phone>9086270412</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>5</priority>
+		<startDate>2012-11-1</startDate>
+		<jobNotes>blow out family room wall and add 600 square foot great room, match exterior</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Lavatory</projectType>
+		<pName>Mantes Lavatory</pName>
+		<fName>Gerry</fName>
+		<lName>Mantes</lName>
+		<email>gerry@mantes.com</email>
+		<phone>9081232930</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>medium</cost>
+		<priority>7</priority>
+		<startDate>2012-6-14</startDate>
+		<jobNotes>new toilet, bath tub, vanity and shower</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Lavatory</projectType>
+		<pName>Smith Lavatory</pName>
+		<fName>John</fName>
+		<lName>Smith</lName>
+		<email>john@smith.com</email>
+		<phone>9082549986</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>low</cost>
+		<priority>8</priority>
+		<startDate>2012-7-1</startDate>
+		<jobNotes>New shower tile and floor</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Roof</projectType>
+		<pName>Roth Roof</pName>
+		<fName>Joe</fName>
+		<lName>Roth</lName>
+		<email>joe@roth.com</email>
+		<phone>9085317283</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>8</priority>
+		<startDate>2012-8-6</startDate>
+		<jobNotes>Roof over existing roof no dumpster required</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Lavatory</projectType>
+		<pName>Stires Lavatory</pName>
+		<fName>Kim</fName>
+		<lName>Stires</lName>
+		<email>kim@wfb.com</email>
+		<phone>9084737272</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>6</priority>
+		<startDate>2012-8-2</startDate>
+		<jobNotes>Gut the entire bathroom and replace everything</jobNotes>
 	</project>
 	
 	<project>
