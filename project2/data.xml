@@ -156,145 +156,129 @@
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Addition</projectType>
+		<pName>Papio Addition</pName>
+		<fName>Matthew</fName>
+		<lName>Papio</lName>
+		<email>matt@papio.com</email>
+		<phone>9736473829</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>9</priority>
+		<startDate>2012-9-4</startDate>
+		<jobNotes>new floor, vanity and bath</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Basement</projectType>
+		<pName>Dill Basement</pName>
+		<fName>James</fName>
+		<lName>Dill</lName>
+		<email>james@dill.com</email>
+		<phone>9732781166</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>8</priority>
+		<startDate>2012-7-9</startDate>
+		<jobNotes>finish entire basement sheetrock and tile floor with built-ins</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Basement</projectType>
+		<pName>Kelly Basement</pName>
+		<fName>Jeff</fName>
+		<lName>Kelly</lName>
+		<email>jeff@kelly.com</email>
+		<phone>9084738383</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>medium</cost>
+		<priority>7</priority>
+		<startDate>2012-9-23</startDate>
+		<jobNotes>wine closet and sheetrock with cork floor</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Lavatory</projectType>
+		<pName>Richdale Lavatory</pName>
+		<fName>John</fName>
+		<lName>Richdale</lName>
+		<email>john@richdale.com</email>
+		<phone>9734920098</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>low</cost>
+		<priority>9</priority>
+		<startDate>2012-9-30</startDate>
+		<jobNotes>gut entire bathroom new everything with built-in tile shower and new vanity</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Roof</projectType>
+		<pName>Hollis Roof</pName>
+		<fName>Link</fName>
+		<lName>Hollis</lName>
+		<email>link@hollis.com</email>
+		<phone>9085006304</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>9</priority>
+		<startDate>2012-7-23</startDate>
+		<jobNotes>Tear off existing roof replace rotten wood + new gutters</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Kitchen</projectType>
+		<pName>Stires Kitchen</pName>
+		<fName>Pete</fName>
+		<lName>Stires</lName>
+		<email>pete@stires.com</email>
+		<phone>9087776253</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>7</priority>
+		<startDate>2012-11-1</startDate>
+		<jobNotes>all new cabinets conestoga doors and custom island</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Kitchen</projectType>
+		<pName>Mathis Kitchen</pName>
+		<fName>Michael</fName>
+		<lName>Mathis</lName>
+		<email>mike@mathis.com</email>
+		<phone>9087223314</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>low</cost>
+		<priority>8</priority>
+		<startDate>2012-8-2</startDate>
+		<jobNotes>all new cabinets and wine rack and tile floor</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Kitchen</projectType>
+		<pName>Long Kitchen</pName>
+		<fName>Tom</fName>
+		<lName>Long</lName>
+		<email>tom@long.com</email>
+		<phone>9083764737</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>high</cost>
+		<priority>9</priority>
+		<startDate>2012-11-4</startDate>
+		<jobNotes>new doors and paint job</jobNotes>
 	</project>
 	
 	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
+		<projectType>Roof</projectType>
+		<pName>Monica Roof</pName>
+		<fName>James</fName>
+		<lName>Monica</lName>
+		<email>james@monica.com</email>
+		<phone>9089874232</phone>
+		<emailOkay>Yes</emailOkay>
+		<cost>medium</cost>
+		<priority>6</priority>
+		<startDate>2012-6-23</startDate>
+		<jobNotes>Remove old roof and gutters</jobNotes>
 	</project>
-	
-	<project>
-		<projectType></projectType>
-		<pName></pName>
-		<fName></fName>
-		<lName></lName>
-		<email></email>
-		<phone></phone>
-		<emailOkay></emailOkay>
-		<cost></cost>
-		<priority></priority>
-		<startDate></startDate>
-		<jobNotes></jobNotes>
-	</project>
-	
-	
 	
 </projects>
