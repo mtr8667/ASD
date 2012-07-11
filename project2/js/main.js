@@ -4,10 +4,10 @@
 // May 17, 2012
 
 
-var parseProjectForm = function(data){
+//var parseProjectForm = function(data){
 // uses form data here 
-	console.log(data);
-};
+//	console.log(data);
+//};
 /* sample code from video why jQuery on using JavaScript without library then with library 
 window.addEventListener('DOMCOntentLoaded',function(){
 	document.getElementById('somelink')
@@ -72,7 +72,8 @@ $(document).on('pageinit',function(){
 */
 // Just above is the JavaScript I used for the Gold MIU app - below is my attempt at jQuery ... here we go
 // function for document ready - this will wrap our entire code.
-$(function(){
+$(document).ready(function() {
+//$(function(){
 	var element = $(document),
 		projectform = $( "#projectform" ),
 		formerrorslink = $("#formerrorslink")
@@ -159,30 +160,29 @@ $(function(){
 			alert("There is no data in local storage so default data has been added.");
 			autoFillData();
 		}
-		var makeDiv	= $("div");
-		$("makeDiv").attr("id", "items");
-		var makeList = $("ul");
-		$("makeDiv").append("makeList");
-		$("document.body").append("makeDiv");
-		//$("items").css("display", "block");
-		$("items").show();
+		var makeDiv	= document.createElement("div");
+		makeDiv.setAttribute("id", "items");
+		var makeList = document.createElement("ul");
+		makeDiv.appendChild(makeList);
+		document.body.appendChild(makeDiv);
+		$("items").style.display = "block";
 		for( var i = 0, len=localStorage.length; i<len; i++){
-			var makeLi = $("li");
-			var linksLi	= $("li");
-			$("makeList").append("makeLi");
+			var makeLi = document.createElement("li");
+			var linksLi	= document.createElement("li");
+			makeList.appendChild(makeLi);
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
 			// Convert the string from localStorage value back to an object using JSON.parse
 			var obj = JSON.parse(value);
-			var makeSubList = $("ul");
-			$("makeLi").append("makeSubList");
+			var makeSubList = makeList.appendChild(makeLi);("ul");
+			makeLi.appendChild(makeSubList);
 			getImage(obj.project[1], makeSubList);
 			for(var n in obj){
-				var makeSubLi = $("li");
-				$("makeSubList").append("makeSubLi");
+				var makeSubLi = document.createElement("li");
+				makeSubList.appendChild(makeSubLi);
 				var optSubText = obj[n][0]+" "+obj[n][1];
-				$("makeSubLi").html("optSubText");
-				$("makeSubList").append("linksLi");
+				makeSubLi.innerHTML = optSubText;
+				makeSubList.appendChild(linksLi);
 				}
 				// create links/buttons (edit & delete) for each project in local storage
 				makeItemLinks(localStorage.key(i), linksLi); 
