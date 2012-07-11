@@ -256,7 +256,7 @@ $(function(){
 		var editSaveProject = $("saveProject");
 		// saving key value in this function as a property of the editSaveProject event 
 		// so we can use that value when we save the edited project
-		editSaveProject.addEventListener("click", validate);
+		editSaveProject.on("click", validate);
 		editSaveProject.key = this.key;
 	}
 

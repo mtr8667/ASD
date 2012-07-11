@@ -186,6 +186,8 @@ $(function(){
 				}
 				// create links/buttons (edit & delete) for each project in local storage
 				makeItemLinks(localStorage.key(i), linksLi); 
+				console.log(obj);
+				
 		}
 	}		
 // Auto populate local storage from json
