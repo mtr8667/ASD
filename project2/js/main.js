@@ -47,20 +47,19 @@ $(function(){
 
 
 $("#home").live('pageinit',function(){
-//$(function(){
-//	$("#getJSON").on("click", function(){
-//	console.log("getJSON");	
-//		$("#dataHolder").empty();
+
+	$("#getJSON").on("click", function(){
+
+		$("#dataHolder").empty();
 		$.ajax({
 			url: 		"xhr/data.json",
 			type:		"GET",
 			dataType:	"json",
 			success:	function(response){
-				console.log(response);
 			}
 			
 		});
-
+});
 });
 /*  temp
 
