@@ -46,16 +46,17 @@ $(function(){
 
 
 
-$("#home").live('pageinit',function(){
+$("#home").on('pageinit',function(){
 
 	$("#getJSON").on("click", function(){
 
 		$("#dataHolder").empty();
 		$.ajax({
-			url: 		"xhr/data.json",
+			url: 		"data/data.json",
 			type:		"GET",
 			dataType:	"json",
 			success:	function(response){
+				console.log(response);
 			}
 			
 		});
