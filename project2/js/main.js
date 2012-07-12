@@ -8,7 +8,9 @@
 // uses form data here 
 //	console.log(data);
 //};
-/* sample code from video why jQuery on using JavaScript without library then with library 
+
+/*
+sample code from video why jQuery on using JavaScript without library then with library 
 window.addEventListener('DOMCOntentLoaded',function(){
 	document.getElementById('somelink')
 	.addEventListener('click', myFn);
@@ -20,8 +22,8 @@ jQuery equivilant
 $(function(){
 	$('somelink').on('click', myFn);
 });
-
 */
+
 
 //$(document).ready(function(){ - this allows us to wait until the document is fully loaded before we run our code
 // this wraps all of our code
@@ -42,37 +44,25 @@ $(function(){
 // some of the jquery factory methods are not chainable $('#nav').hasClass('myClass') returns a boolean - true or false 
 // the hasClass is a good way to search through you document to fins all the elements that have a certain class - in the example above it would be all the nav(s) that have a certain class 
 
-/*
-$(document).on('pageinit',function(){
-	
-	var 	projectform = $( "#projectform" ),
-			formerrorslink = $("#formerrorslink")
-	;
+
+
+$("#home").live('pageinit',function(){
+//$(function(){
+//	$("#getJSON").on("click", function(){
+//	console.log("getJSON");	
+//		$("#dataHolder").empty();
+		$.ajax({
+			url: 		"xhr/data.json",
+			type:		"GET",
+			dataType:	"json",
+			success:	function(response){
+				console.log(response);
+			}
 			
+		});
 
-	projectform.validate({
-		invalidHandler: function(form, validator){
-			// this bring up the pop up error dialog
-			formerrorslink.click();
-			var html = ' ';
-			for(var key in validator.submitted){
-				var label = $('label[for^="'+ key +'"]').not('[generated]');
-				var legend = label.closest('fieldset').find('.ui-controlgroup-label');
-				var fieldName = legend.length ? legend.text() : label.text();
-				html += '<li>' + fieldName + '</li>';
-			};
-			$('#showerrors ul').html(html);
-		},
-		submitHandler: function(){
-			var 	data = projectform.serializeArray();
-			parseProjectForm(data);
-		}
-	});
 });
-*/
-
-
-$("#home").on('pageinit',function(){
+/*  temp
 
 // Toggle control 
 	function toggleControls(n){
@@ -95,25 +85,27 @@ $("#home").on('pageinit',function(){
 					return false;
 		}
 	}
-$("#getProjects").on("click", getProjects); 
+
+
 // Write data from localStorage to the browser
+	$("#getProjects").on("click", getProjects);
 	function getProjects(){
 		toggleControls("on");
 		if(localStorage.length === 0 ){
 			alert("There is no data in local storage so default data has been added.");
 			autoFillData();
 		}
-/* 		var makeDiv	= document.createElement("div"); */
-/* 		makeDiv.setAttribute("id", "items"); */
-/* 		var makeList = document.createElement("ul"); */
-/* 		makeDiv.appendChild(makeList); */
-/* 		document.body.appendChild(makeDiv); */
-/* 		$("items").css("display, block"); */
-		for( var i = 0, len=localStorage.length; i<len; i++){
+//		var makeDiv	= document.createElement("div");
+//		makeDiv.setAttribute("id", "items");
+//		var makeList = document.createElement("ul");
+//		makeDiv.appendChild(makeList);
+//		document.body.appendChild(makeDiv);
+//		$("items").css("display, block");
+//		for( var i = 0, len=localStorage.length; i<len; i++){
 			var makeLi = $("li");
 			var linksLi	= $("li");
 			makeList.appendChild(makeLi);
-/* 			$(makeLi).appendTo("#items"); */
+//			$(makeLi).appendTo("#items");
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
 			// Convert the string from localStorage value back to an object using JSON.parse
@@ -149,27 +141,29 @@ $("#getProjects").on("click", getProjects);
 
 // This function is going to create the link/buttons for each project when accessed
 	// make item links/buttons for each project
+
 	function makeItemLinks(key, linksLi){
 		var editLink = $('<a href="#">Edit Project</a>').appendTo(linksLi);
 		editLink.attr();
 		var deleteLink = $('<a href="#">Delete Project</a>').appendTo(linksLi);
-/* 		var editLink = $("a"); */
-/* 		editLink.href = "#"; */
+
+//		var editLink = $("a");
+//		editLink.href = "#";
 		editLink.key = key;
-/* 		var editText = "Edit Project"; */
+//		var editText = "Edit Project";
 		$("editLink").on("click", editItem);
-/* 		$("editLink").html("editText"); */
+//		$("editLink").html("editText");
 		$("linksLi").append("editLink");
 		// add line break
-/* 		var breakTag = $("br"); */
+//		var breakTag = $("br");
 		$("linksLi").append("breakTag");
-/* 		var deleteLink = $("a"); */
-/* 		deleteLink.href = "#"; */
+//		var deleteLink = $("a");
+//		deleteLink.href = "#";
 		deleteLink.key = key;
-/* 		var deleteText = "Delete Project"; */
+//		var deleteText = "Delete Project";
 		$("deleteLink").on("click", deleteItem);
-/* 		$("deleteLink").html("deleteText"); */
-/* 		$("linksLi").append("deleteLink"); */
+//		$("deleteLink").html("deleteText");
+//		$("linksLi").append("deleteLink");
 	}
 
 // function to allow us to pull a project from local storage and edit an item
@@ -246,7 +240,7 @@ $("#deleteProject").on("click", deleteProject);
 		}
 	}
 
-});
+//});
 
 $("#newProject").on('pageinit',function(){
 
@@ -332,6 +326,7 @@ $("#additions").on('pageinit',function(){
 
 });
 
+temp */ 
 
 // Just above is the JavaScript I used for the Gold MIU app - below is my attempt at jQuery ... here we go
 // function for document ready - this will wrap our entire code.
@@ -341,7 +336,8 @@ $("#additions").on('pageinit',function(){
 // Find the value of a selected radial button ,
 	// 
 	// I believe these are now being handled by the plugin
-	/*
+
+/*
 	function getSelectedRadio(){
 		var radios = document.forms[0].cost;
 		for( var i=0; i < radios.length; i++){
@@ -365,14 +361,14 @@ $("#additions").on('pageinit',function(){
 
 
 	// Set link & submit Click Events 
- 	/*
+/*
  	var showProjectsLink = ge("showProjectsLink");
  	showProjectsLink.addEventListener("click", getProjects);
  	var clearProjectsLink = ge('clearProjectsLink');
  	clearProjectsLink.addEventListener("click", deleteProject); 
  	var save = ge("saveProject");
  	save.addEventListener("click", validate);
- 	*/
+*/
  	
 		
 	
