@@ -62,7 +62,7 @@
 
 		<!-- Catagory List -->
 		<div data-role="content">
-			<ul data-role="listview" data-filter="true" data-inset="true" data-mini="true">
+			<ul id="mainUl" data-role="listview" data-filter="true" data-inset="true" data-mini="true">
 				<li>
 					<a href="#additions" data-add-back-btn="true" data-transition="fade">
 						<img src="images/a.png"/>
@@ -105,7 +105,9 @@
 		</div>
 		<div data-role="fieldcontain">
 			<center>
-				<div id="projectPlaceholder">			
+				<div id="items">
+					<ul id="storedProjects" data-role="listveiw">
+					</ul>			
 				</div>
 			</center>
 		</div>
@@ -120,7 +122,7 @@
 		<!-- Home page Footer -->
 		<div data-role="footer" data-position="fixed" data-id="footer">
 				<div data-role="navbar">
-					<ul>
+					<ul id="footerUl">
 						<li><a href="#home" data-icon="home"  data-transition="fade">home</a></li>
 						<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="fade">gold</a></li>
 						<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="fade">bronze</a></li>

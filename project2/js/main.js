@@ -70,35 +70,10 @@ $(document).on('pageinit',function(){
 	});
 });
 */
-// Just above is the JavaScript I used for the Gold MIU app - below is my attempt at jQuery ... here we go
-// function for document ready - this will wrap our entire code.
-$(document).ready(function() {
-//$(function(){
-	var element = $(document),
-		projectform = $( "#projectform" ),
-		formerrorslink = $("#formerrorslink")
-	;
-// Find the value of a selected radial button ,
-	// 
-	// I believe these are now being handled by the plugin
-	/*
-	function getSelectedRadio(){
-		var radios = document.forms[0].cost;
-		for( var i=0; i < radios.length; i++){
-			if(radios[i].checked){
-			cost = radios[i].value;
-			}
-		}
-	}
-	function getCheckboxValue(){
-		if($("emailOkay").checked){
-			emailOkay	=	$("emailOkay").value;
-		}else{
-			emailOkay 	=	"No"
-		}
-	}	
 
-*/
+
+$("#home").on('pageinit',function(){
+
 // Toggle control 
 	function toggleControls(n){
 		switch(n){
@@ -120,39 +95,7 @@ $(document).ready(function() {
 					return false;
 		}
 	}
-/*
-// the key is only generated when we are editing a project so if there is no key its a new project
-	function saveLocal(key){
-		if(!key){
-			var 	id 						= Math.floor(Math.random()*10000001);
-		}else{
-			//set the id to the existing key we're editing so the data will be modified and we'll save over the original data
-			//this key has been passed along from the editSaveProject eventListener to the validate function then passed here
-			// into storeLocal function
-			id = key;
-		}
-		// get all the form field values and store them in an object.
-		// the object properties contain an array with the form label and input value.
-		getSelectedRadio();
-		getCheckboxValue();
-		var	item 					= {};
-				item.project		= ["Project Type:", $("project").value];
-				item.pname 			= ["Project Name:", $("pname").value];
-				item.fname 			= ["First Name:", $("fname").value];
-				item.lname 			= ["Last Name:", $("lname").value];
-				item.email 			= ["Email:", $("email").value];
-				item.phone 			= ["Phone:", $("phone").value];			
-				item.emailOkay 		= ["Communicate Via email:", emailOkay];
-				item.cost			= ["Price per sq ft.", cost];			
-				item.priority 		= ["Priority", $("priority").value];
-				item.startDate		= ["Start Date", $("startDate").value];
-				item.jobNotes 		= ["Job Notes", $("jobNotes").value];
-		// Save data into local storage : use stringify to convert our object to a string.
-		localStorage.setItem(id, JSON.stringify(item));	
-		alert("Your project has been saved successfully!");			
-	} 
-
-*/
+$("#getProjects").on("click", getProjects); 
 // Write data from localStorage to the browser
 	function getProjects(){
 		toggleControls("on");
@@ -160,21 +103,22 @@ $(document).ready(function() {
 			alert("There is no data in local storage so default data has been added.");
 			autoFillData();
 		}
-		var makeDiv	= document.createElement("div");
-		makeDiv.setAttribute("id", "items");
-		var makeList = document.createElement("ul");
-		makeDiv.appendChild(makeList);
-		document.body.appendChild(makeDiv);
-		$("items").style.display = "block";
+/* 		var makeDiv	= document.createElement("div"); */
+/* 		makeDiv.setAttribute("id", "items"); */
+/* 		var makeList = document.createElement("ul"); */
+/* 		makeDiv.appendChild(makeList); */
+/* 		document.body.appendChild(makeDiv); */
+/* 		$("items").css("display, block"); */
 		for( var i = 0, len=localStorage.length; i<len; i++){
-			var makeLi = document.createElement("li");
-			var linksLi	= document.createElement("li");
+			var makeLi = $("li");
+			var linksLi	= $("li");
 			makeList.appendChild(makeLi);
+/* 			$(makeLi).appendTo("#items"); */
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
 			// Convert the string from localStorage value back to an object using JSON.parse
 			var obj = JSON.parse(value);
-			var makeSubList = makeList.appendChild(makeLi);("ul");
+			var makeSubList = makeList.appendChild(makeLi);
 			makeLi.appendChild(makeSubList);
 			getImage(obj.project[1], makeSubList);
 			for(var n in obj){
@@ -189,7 +133,10 @@ $(document).ready(function() {
 				console.log(obj);
 				
 		}
-	}		
+	}	
+
+	
+		
 // Auto populate local storage from json
 	// actual json object data for this to work will come from json.js which is loaded from HTML page
 	// the main.js and json.js files can see eachothers variables - that's why we can loop through json in the main.js file
@@ -203,23 +150,26 @@ $(document).ready(function() {
 // This function is going to create the link/buttons for each project when accessed
 	// make item links/buttons for each project
 	function makeItemLinks(key, linksLi){
-		var editLink = $("a");
-		editLink.href = "#";
+		var editLink = $('<a href="#">Edit Project</a>').appendTo(linksLi);
+		editLink.attr();
+		var deleteLink = $('<a href="#">Delete Project</a>').appendTo(linksLi);
+/* 		var editLink = $("a"); */
+/* 		editLink.href = "#"; */
 		editLink.key = key;
-		var editText = "Edit Project";
+/* 		var editText = "Edit Project"; */
 		$("editLink").on("click", editItem);
-		$("editLink").html("editText");
+/* 		$("editLink").html("editText"); */
 		$("linksLi").append("editLink");
 		// add line break
-		var breakTag = $("br");
+/* 		var breakTag = $("br"); */
 		$("linksLi").append("breakTag");
-		var deleteLink = $("a");
-		deleteLink.href = "#";
+/* 		var deleteLink = $("a"); */
+/* 		deleteLink.href = "#"; */
 		deleteLink.key = key;
-		var deleteText = "Delete Project";
+/* 		var deleteText = "Delete Project"; */
 		$("deleteLink").on("click", deleteItem);
-		$("deleteLink").html("deleteText");
-		$("linksLi").append("deleteLink");
+/* 		$("deleteLink").html("deleteText"); */
+/* 		$("linksLi").append("deleteLink"); */
 	}
 
 // function to allow us to pull a project from local storage and edit an item
@@ -281,6 +231,9 @@ $(document).ready(function() {
 		var setSrc = $("newImg").attr("src", "images/" + projectName + ".png");
 		$("imageLi").append("newImg");
 	}
+
+
+$("#deleteProject").on("click", deleteProject);
 // delete project functions
 	function deleteProject(){
 		if(localStorage.length === 0){
@@ -292,6 +245,15 @@ $(document).ready(function() {
 			return false;
 		}
 	}
+
+});
+
+$("#newProject").on('pageinit',function(){
+
+	var element = $(document),
+		projectform = $( "#projectform" ),
+		formerrorslink = $("#formerrorslink")
+	;
 
 // Validate function for the form
 	projectform.validate({
@@ -320,6 +282,88 @@ $(document).ready(function() {
 	$("parseProjectForm").data(data);
 		alert("Your project has been saved successfully!");		
 	};
+// the key is only generated when we are editing a project so if there is no key its a new project
+	function saveLocal(key){
+		if(!key){
+			var 	id 						= Math.floor(Math.random()*10000001);
+		}else{
+			//set the id to the existing key we're editing so the data will be modified and we'll save over the original data
+			//this key has been passed along from the editSaveProject eventListener to the validate function then passed here
+			// into storeLocal function
+			id = key;
+		}
+		// get all the form field values and store them in an object.
+		// the object properties contain an array with the form label and input value.
+		getSelectedRadio();
+		getCheckboxValue();
+		var	item 					= {};
+				item.project		= ["Project Type:", $("project").value];
+				item.pname 			= ["Project Name:", $("pname").value];
+				item.fname 			= ["First Name:", $("fname").value];
+				item.lname 			= ["Last Name:", $("lname").value];
+				item.email 			= ["Email:", $("email").value];
+				item.phone 			= ["Phone:", $("phone").value];			
+				item.emailOkay 		= ["Communicate Via email:", emailOkay];
+				item.cost			= ["Price per sq ft.", cost];			
+				item.priority 		= ["Priority", $("priority").value];
+				item.startDate		= ["Start Date", $("startDate").value];
+				item.jobNotes 		= ["Job Notes", $("jobNotes").value];
+		// Save data into local storage : use stringify to convert our object to a string.
+		localStorage.setItem(id, JSON.stringify(item));	
+		alert("Your project has been saved successfully!");			
+	} 
+
+
+});
+
+$("#feedback").on('pageinit',function(){
+
+});
+
+$("#jobreporting").on('pageinit',function(){
+
+});
+
+$("#underconstruction").on('pageinit',function(){
+
+});
+
+$("#additions").on('pageinit',function(){
+
+});
+
+
+// Just above is the JavaScript I used for the Gold MIU app - below is my attempt at jQuery ... here we go
+// function for document ready - this will wrap our entire code.
+
+//$(function(){
+	
+// Find the value of a selected radial button ,
+	// 
+	// I believe these are now being handled by the plugin
+	/*
+	function getSelectedRadio(){
+		var radios = document.forms[0].cost;
+		for( var i=0; i < radios.length; i++){
+			if(radios[i].checked){
+			cost = radios[i].value;
+			}
+		}
+	}
+	function getCheckboxValue(){
+		if($("emailOkay").checked){
+			emailOkay	=	$("emailOkay").value;
+		}else{
+			emailOkay 	=	"No"
+		}
+	}	
+
+*/
+
+
+
+
+
 	// Set link & submit Click Events 
  	/*
  	var showProjectsLink = ge("showProjectsLink");
@@ -329,11 +373,10 @@ $(document).ready(function() {
  	var save = ge("saveProject");
  	save.addEventListener("click", validate);
  	*/
- 	$("#getProjects").on("click", getProjects); 
-	$("#deleteProject").on("click", deleteProject);
+ 	
+		
 	
 	
 	
-	
-});
+
 
