@@ -75,13 +75,55 @@ $("#home").on('pageinit',function(){
 					"<p>" + sp.startDate +"</p>"+
 					"<p>" + sp.jobNotes +"</p>"+
 				"</div>"
-			).appendTo("dataHolder");
+			).appendTo("#dataHolder");
 		});
+});
+
+
+	$("#getXML").on("click", function(){
+		$("#dataHolder").empty();
+		$.ajax({
+			url: 		"data/data.json",
+			type:		"GET",
+			dataType:	"json",
+			success:	function(xml){
+			$(xml).find("projects").each(function(){
+				var projects = $(this).find("projects").text();
+				var project = $(this).find("project").text();
+				var pname = $(this).find("pname").text();
+				var fname = $(this).find("fname").text();
+				var lname = $(this).find("lname").text();
+				var email = $(this).find("email").text();
+				var phone = $(this).find("phone").text();
+				var emailOkay = $(this).find("emailOkay").text();
+				var cost = $(this).find("cost").text();
+				var priority = $(this).find("priority").text();
+				var startDate = $(this).find("startDate").text();
+				var jobNotes = $(this).find("jobNotes").text();
+			$(""+
+				"<div>"+  
+					"<h2>" + sp.projects +"</h2>"+
+					"<p>" + sp.project +"</p>"+
+					"<p>" + sp.pname +"</p>"+
+					"<p>" + sp.fname +"</p>"+
+					"<p>" + sp.lname +"</p>"+
+					"<p>" + sp.email +"</p>"+
+					"<p>" + sp.phone +"</p>"+
+					"<p>" + sp.emailOkay +"</p>"+
+					"<p>" + sp.cost +"</p>"+
+					"<p>" + sp.priority +"</p>"+
+					"<p>" + sp.startDate +"</p>"+
+					"<p>" + sp.jobNotes +"</p>"+
+				"</div>"
+			).appendTo("#dataHolder");
+		});
+	}
+});
 });
 
 $("#home").on('pageinit',function(){
 
-	$("#getJSON").on("click", function(){
+	$("#getCSV").on("click", function(){
 	console.log("#getJSON");
 		$("#dataHolder").empty();
 		$.ajax({
@@ -108,40 +150,7 @@ $("#home").on('pageinit',function(){
 					"<p>" + sp.startDate +"</p>"+
 					"<p>" + sp.jobNotes +"</p>"+
 				"</div>"
-			).appendTo("dataHolder");
-		});
-});
-
-$("#home").on('pageinit',function(){
-
-	$("#getJSON").on("click", function(){
-	console.log("#getJSON");
-		$("#dataHolder").empty();
-		$.ajax({
-			url: 		"data/data.json",
-			type:		"GET",
-			dataType:	"json",
-			success:	function(response){
-				console.log(response);
-			}
-			for (var i=0, j=response.projects.length; i,j; i++)
-			var sp = response.projects[i]
-			$(""+
-				"<div>"+  
-					"<h2>" + sp.projects +"</h2>"+
-					"<p>" + sp.project +"</p>"+
-					"<p>" + sp.pname +"</p>"+
-					"<p>" + sp.fname +"</p>"+
-					"<p>" + sp.lname +"</p>"+
-					"<p>" + sp.email +"</p>"+
-					"<p>" + sp.phone +"</p>"+
-					"<p>" + sp.emailOkay +"</p>"+
-					"<p>" + sp.cost +"</p>"+
-					"<p>" + sp.priority +"</p>"+
-					"<p>" + sp.startDate +"</p>"+
-					"<p>" + sp.jobNotes +"</p>"+
-				"</div>"
-			).appendTo("dataHolder");
+			).appendTo("#dataHolder");
 		});
 });
 });

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<projects>
+<projectData>
 	
-	<project1>
+	<project>
+		<projects>Project 1</projects>
 		<projectType>Kitchen</projectType>
 		<pName>Richter Kitchen</pName>
 		<fName>Matthew</fName>
@@ -13,9 +14,10 @@
 		<priority>9</priority>
 		<startDate>2012-5-1</startDate>
 		<jobNotes>Re-due tile floor and add three new custom cabinets</jobNotes>
-	</project1>
+	</project>
 	
-	<project2>
+	<project>
+		<projects>Project 2</projects>
 		<projectType>Addition</projectType>
 		<pName>Anderson Addition</pName>
 		<fName>Chris</fName>
@@ -27,8 +29,12 @@
 		<priority>7</priority>
 		<startDate>2012-6-1</startDate>
 		<jobNotes>600 sq ft addition of the family room</jobNotes>
-	</project2>
+	</project>
+
+</projectData>	
 	
+
+<!--	
 	<project3>
 		<projectType>Lavatory</projectType>
 		<pName>Richter Lavatory</pName>
@@ -282,3 +288,4 @@
 	</project20>
 	
 </projects>
+-->
