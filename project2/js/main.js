@@ -47,7 +47,7 @@ $(function(){
 
 
 $("#home").on('pageinit',function(){
-
+// get JSON
 	$("#getJSON").on("click", function(){
 	console.log("#getJSON");
 		$("#dataHolder").empty();
@@ -79,13 +79,13 @@ $("#home").on('pageinit',function(){
 		});
 });
 
-
+// get XML
 	$("#getXML").on("click", function(){
 		$("#dataHolder").empty();
 		$.ajax({
-			url: 		"data/data.json",
+			url: 		"data/data.xml",
 			type:		"GET",
-			dataType:	"json",
+			dataType:	"xml",
 			success:	function(xml){
 			$(xml).find("projects").each(function(){
 				var projects = $(this).find("projects").text();
@@ -120,21 +120,23 @@ $("#home").on('pageinit',function(){
 	}
 });
 });
-
-$("#home").on('pageinit',function(){
-
+// get CSV
 	$("#getCSV").on("click", function(){
-	console.log("#getJSON");
 		$("#dataHolder").empty();
 		$.ajax({
-			url: 		"data/data.json",
+			url: 		"data/data.csv",
 			type:		"GET",
-			dataType:	"json",
-			success:	function(response){
-				console.log(response);
-			}
-			for (var i=0, j=response.projects.length; i,j; i++)
-			var sp = response.projects[i]
+			dataType:	"text",
+			success:	function(data){
+			var textLines = data.split(/\r\n|\n/);
+			var headers = textLines[0].split(",");
+			var lines = [];
+			
+			for (var i=1, j=textLines.length;i++)
+				var data = textLines[i].split(",");
+				if (data.length == headers.length) 
+				
+				
 			$(""+
 				"<div>"+  
 					"<h2>" + sp.projects +"</h2>"+
