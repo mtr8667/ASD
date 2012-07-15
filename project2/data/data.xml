@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectData>
 	<projects>
-		<project>Project 1</project>
+		<project>XML Project 1</project>
 		<projectType>Kitchen</projectType>
 		<pName>Richter Kitchen</pName>
 		<fName>Matthew</fName>
@@ -15,7 +15,7 @@
 		<jobNotes>Re-due tile floor and add three new custom cabinets</jobNotes>
 	</projects>
 	<projects>
-		<project>Project 2</project>
+		<project>XML Project 2</project>
 		<projectType>Addition</projectType>
 		<pName>Anderson Addition</pName>
 		<fName>Chris</fName>

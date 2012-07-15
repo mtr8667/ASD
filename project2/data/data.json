@@ -1,7 +1,7 @@
 {
 	"projectData":[
 		{
-			"projects":		["JSON project1"],
+			"projects":		["JSON project 1"],
 			"project":		["Project Type:","Kitchen"],
 			"pname":		["Project Name:", "Richter Kitchen"],
 			"fname":		["First Name:","Matthew"],
@@ -15,7 +15,7 @@
 			"jobNotes":		["Job Notes:","Re-due tile floor and add three new custom cabinets"]
 		},
 		{
-			"projects":		["JSON project2"],
+			"projects":		["JSON project 2"],
 			"project":		["Project Type:", "Addition"],
 			"pname":		["Project Name:", "Anderson Addition"],
 			"fname":		["First Name:", "Chris"],
