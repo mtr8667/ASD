@@ -49,34 +49,35 @@ $(function(){
 $("#home").on('pageinit',function(){
 // get JSON
 	$("#getJSON").on("click", function(){
-	console.log("#getJSON");
+		console.log("#getJSON");
 		$("#dataHolder").empty();
 		$.ajax({
 			url: 		"data/data.json",
 			type:		"GET",
 			dataType:	"json",
 			success:	function(response){
-				console.log(response);
-			}
-			for (var i=0, j=response.projects.length; i,j; i++)
-			var sp = response.projects[i]
-			$(""+
-				"<div>"+  
-					"<h2>" + sp.projects +"</h2>"+
-					"<p>" + sp.project +"</p>"+
-					"<p>" + sp.pname +"</p>"+
-					"<p>" + sp.fname +"</p>"+
-					"<p>" + sp.lname +"</p>"+
-					"<p>" + sp.email +"</p>"+
-					"<p>" + sp.phone +"</p>"+
-					"<p>" + sp.emailOkay +"</p>"+
-					"<p>" + sp.cost +"</p>"+
-					"<p>" + sp.priority +"</p>"+
-					"<p>" + sp.startDate +"</p>"+
-					"<p>" + sp.jobNotes +"</p>"+
-				"</div>"
-			).appendTo("#dataHolder");
-		});
+				for (var i=0, j=response.projectData.length; i<j; i++){
+					console.log(response);
+					var sp = response.projectData[i];
+					$(""+
+						"<div>"+  
+							"<h2>" + sp.projects +"</h2>"+
+							"<p>" + sp.project +"</p>"+
+							"<p>" + sp.pname +"</p>"+
+							"<p>" + sp.fname +"</p>"+
+							"<p>" + sp.lname +"</p>"+
+							"<p>" + sp.email +"</p>"+
+							"<p>" + sp.phone +"</p>"+
+							"<p>" + sp.emailOkay +"</p>"+
+							"<p>" + sp.cost +"</p>"+
+							"<p>" + sp.priority +"</p>"+
+							"<p>" + sp.startDate +"</p>"+
+							"<p>" + sp.jobNotes +"</p>"+
+						"</div>"
+					).appendTo("#dataHolder");
+};
+}
+});
 });
 
 // get XML
@@ -102,25 +103,27 @@ $("#home").on('pageinit',function(){
 				var jobNotes = $(this).find("jobNotes").text();
 			$(""+
 				"<div>"+  
-					"<h2>" + sp.projects +"</h2>"+
-					"<p>" + sp.project +"</p>"+
-					"<p>" + sp.pname +"</p>"+
-					"<p>" + sp.fname +"</p>"+
-					"<p>" + sp.lname +"</p>"+
-					"<p>" + sp.email +"</p>"+
-					"<p>" + sp.phone +"</p>"+
-					"<p>" + sp.emailOkay +"</p>"+
-					"<p>" + sp.cost +"</p>"+
-					"<p>" + sp.priority +"</p>"+
-					"<p>" + sp.startDate +"</p>"+
-					"<p>" + sp.jobNotes +"</p>"+
+					"<h2>" + projects +"</h2>"+
+					"<p>" + project +"</p>"+
+					"<p>" + pname +"</p>"+
+					"<p>" + fname +"</p>"+
+					"<p>" + lname +"</p>"+
+					"<p>" + email +"</p>"+
+					"<p>" + phone +"</p>"+
+					"<p>" + emailOkay +"</p>"+
+					"<p>" + cost +"</p>"+
+					"<p>" + priority +"</p>"+
+					"<p>" + startDate +"</p>"+
+					"<p>" + jobNotes +"</p>"+
 				"</div>"
 			).appendTo("#dataHolder");
 		});
 	}
 });
 });
+});
 // get CSV
+/*
 	$("#getCSV").on("click", function(){
 		$("#dataHolder").empty();
 		$.ajax({
@@ -153,6 +156,7 @@ $("#home").on('pageinit',function(){
 					"<p>" + sp.jobNotes +"</p>"+
 				"</div>"
 			).appendTo("#dataHolder");
+			};
 		});
 });
 });
