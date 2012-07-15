@@ -75,25 +75,30 @@ $("#home").on('pageinit',function(){
 							"<p>" + sp.jobNotes +"</p>"+
 						"</div>"
 					).appendTo("#dataHolder");
-};
-},
-});
+				};
+			},
+			error: function(error){
+				console.log(error);
+			}
+		});
 });
 
 // get XML
 	$("#getXML").on("click", function(){
 		$("#dataHolder").empty();
+		console.log("#getXML");
 		$.ajax({
 			url: 		"data/data.xml",
 			type:		"GET",
 			dataType:	"xml",
 			success:	function(xml){
+			console.log(xml);			
 			$(xml).find("projects").each(function(){
-				var projects = $(this).find("projects").text();
 				var project = $(this).find("project").text();
-				var pname = $(this).find("pname").text();
-				var fname = $(this).find("fname").text();
-				var lname = $(this).find("lname").text();
+				var projectType = $(this).find("projectType").text();
+				var pName = $(this).find("pName").text();
+				var fName = $(this).find("fName").text();
+				var lName = $(this).find("lName").text();
 				var email = $(this).find("email").text();
 				var phone = $(this).find("phone").text();
 				var emailOkay = $(this).find("emailOkay").text();
@@ -103,11 +108,11 @@ $("#home").on('pageinit',function(){
 				var jobNotes = $(this).find("jobNotes").text();
 			$(""+
 				"<div>"+  
-					"<h2>" + projects +"</h2>"+
-					"<p>" + project +"</p>"+
-					"<p>" + pname +"</p>"+
-					"<p>" + fname +"</p>"+
-					"<p>" + lname +"</p>"+
+					"<h2>" + project +"</h2>"+
+					"<p>" + projectType +"</p>"+
+					"<p>" + pName +"</p>"+
+					"<p>" + fName +"</p>"+
+					"<p>" + lName +"</p>"+
 					"<p>" + email +"</p>"+
 					"<p>" + phone +"</p>"+
 					"<p>" + emailOkay +"</p>"+
