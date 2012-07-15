@@ -76,7 +76,7 @@ $("#home").on('pageinit',function(){
 						"</div>"
 					).appendTo("#dataHolder");
 };
-}
+},
 });
 });
 
