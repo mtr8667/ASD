@@ -1,7 +1,7 @@
 // Matthew RIchter 
 // MIU - Full Sail University
 // Project 3
-// May 17, 2012
+// July 19, 2012
 
 
 //var parseProjectForm = function(data){
@@ -178,7 +178,7 @@ $("#home").on('pageinit',function(){
 });
 });
 
-// ajax call to the couchDB files containing the additions value displaying in the #additionsList UL on the additions page
+// ajax call to the couchDB files containing the additions value displaying in the #additionsList UL on the additions page I've changed this to try and create a collapsible list 
 $('#additions').on('pageinit', function () {   
 	$("#additionsList").empty();
 		$.ajax({
@@ -239,24 +239,21 @@ $('#basements').on('pageinit', function () {
 	    	    	var priority = basement.value.priority;
 	    	    	var startDate = basement.value.startDate;
 	    	    	var jobNotes = basement.value.jobNotes;
-
+// 
 	    	    		$("#basementsList").append(
-	    	    				$("<li>").append(
-	    	    					$("<a>").attr("href", "#")	
-	    	    						.text(projectName)
-	    	    				)
-	/*    	    				$("<li>").text(projectName),
-	    	    				$("<li>").text(firstName),
-	    	    				$("<li>").text(lastName),
-	    	    				$("<li>").text(email),
-	    	    				$("<li>").text(phone),
-	    	    				$("<li>").text(emailBest),
-	    	    				$("<li>").text(cost),
-	    	    				$("<li>").text(priority),
-	    	    				$("<li>").text(startDate),
-	    	    				$("<li>").text(jobNotes)	
-	 */
-	    	    		);
+	    	    				$("<div>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
 	    		});
 	    		$("#basementsList").listview("refresh");
 	    	}
@@ -284,22 +281,19 @@ $('#kitchens').on('pageinit', function () {
 	    	    	var jobNotes = kitchen.value.jobNotes;
 
 	    	    		$("#kitchensList").append(
-	    	    				$("<li>").append(
-	    	    					$("<a>").attr("href", "#")	
-	    	    						.text(projectName)
-	    	    				)
-	/*    	    				$("<li>").text(projectName),
-	    	    				$("<li>").text(firstName),
-	    	    				$("<li>").text(lastName),
-	    	    				$("<li>").text(email),
-	    	    				$("<li>").text(phone),
-	    	    				$("<li>").text(emailBest),
-	    	    				$("<li>").text(cost),
-	    	    				$("<li>").text(priority),
-	    	    				$("<li>").text(startDate),
-	    	    				$("<li>").text(jobNotes)	
-	 */
-	    	    		);
+	    	    				$("<div>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
 	    		});
 	    		$("#kitchensList").listview("refresh");
 	    	}
@@ -327,22 +321,19 @@ $('#lavatories').on('pageinit', function () {
 	    	    	var jobNotes = lavatory.value.jobNotes;
 
 	    	    		$("#lavatoriesList").append(
-	    	    				$("<li>").append(
-	    	    					$("<a>").attr("href", "#")	
-	    	    						.text(projectName)
-	    	    				)
-	/*    	    				$("<li>").text(projectName),
-	    	    				$("<li>").text(firstName),
-	    	    				$("<li>").text(lastName),
-	    	    				$("<li>").text(email),
-	    	    				$("<li>").text(phone),
-	    	    				$("<li>").text(emailBest),
-	    	    				$("<li>").text(cost),
-	    	    				$("<li>").text(priority),
-	    	    				$("<li>").text(startDate),
-	    	    				$("<li>").text(jobNotes)	
-	 */
-	    	    		);
+	    	    				$("<div>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
 	    		});
 	    		$("#lavatoriesList").listview("refresh");
 	    	}
@@ -370,22 +361,19 @@ $('#roofs').on('pageinit', function () {
 	    	    	var jobNotes = roof.value.jobNotes;
 
 	    	    		$("#roofsList").append(
-	    	    				$("<li>").append(
-	    	    					$("<a>").attr("href", "#")	
-	    	    						.text(projectName)
-	    	    				)
-	/*    	    				$("<li>").text(projectName),
-	    	    				$("<li>").text(firstName),
-	    	    				$("<li>").text(lastName),
-	    	    				$("<li>").text(email),
-	    	    				$("<li>").text(phone),
-	    	    				$("<li>").text(emailBest),
-	    	    				$("<li>").text(cost),
-	    	    				$("<li>").text(priority),
-	    	    				$("<li>").text(startDate),
-	    	    				$("<li>").text(jobNotes)	
-	 */
-	    	    		);
+	    	    				$("<div>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
 	    		});
 	    		$("#roofsList").listview("refresh");
 	    	}
