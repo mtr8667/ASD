@@ -23,7 +23,7 @@ $(function(){
 	$('somelink').on('click', myFn);
 });
 */
-
+//
 
 //$(document).ready(function(){ - this allows us to wait until the document is fully loaded before we run our code
 // this wraps all of our code
