@@ -1,12 +1,4 @@
-$("home").live("pageshow", function() {
-	$couch.db("asdproject").view("app/projects", {
-		success: function(data) {
-			console.log(data);
-		}
-	});
-});	
-
-}
+$
 
 {
     "name": "asdproject",

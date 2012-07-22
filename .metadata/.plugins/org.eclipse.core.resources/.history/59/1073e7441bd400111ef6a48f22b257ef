@@ -1,5 +1,5 @@
 $("home").live("pageshow", function() {
-	$couch.db("asdproject").view("app/projects", {
+	$couch.db("asdproject").view("plugin/projects", {
 		success: function(data) {
 			console.log(data);
 		}
