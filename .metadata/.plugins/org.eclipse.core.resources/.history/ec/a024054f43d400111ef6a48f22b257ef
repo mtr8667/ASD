@@ -157,7 +157,7 @@ $("#home").on('pageinit',function(){
 					var thisProjectData = lines[t];	
 				
 				$(""+
-					"<li>"+  
+					"<div>"+  
 						"<h2>" + thisProjectData[0] +"</h2>"+
 						"<p>" + thisProjectData[1] +"</p>"+
 						"<p>" + thisProjectData[2] +"</p>"+
@@ -170,10 +170,10 @@ $("#home").on('pageinit',function(){
 						"<p>" + thisProjectData[9] +"</p>"+
 						"<p>" + thisProjectData[10] +"</p>"+
 						"<p>" + thisProjectData[11] +"</p>"+
-					"</li>"
+					"</div>"
 				).appendTo("#dataHolder");
 				}
-				$("#dataHolder").listview("refresh");
+			
 			}
 		});
 		return false;
