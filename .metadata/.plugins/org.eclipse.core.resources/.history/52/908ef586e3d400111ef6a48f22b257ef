@@ -57,7 +57,7 @@ $("#home").live("pageshow", function() {
 				$("#dataHolder").append(
 					$("<li>").append(
 							$("<a>")
-								.attr("href", "jobs.html?job=" + item.projectType)
+								.attr("href", "jobs.html?Job=" + item.projectType)
 								.text(item.projectName)
 					)	
 				);
@@ -438,8 +438,7 @@ $('#contacts').on('pageinit', function () {
 
 // new end of $(home)
 });
-var urlVars = function() {
-	var urlData = $($.mobile.activePage).data("url");
+var urlVars = function(urlData) {
 	var urlParts = urlData.split("?");
 	// foo?a=1&b=2&c=3 etc...is my case its 10
 	var urlPairs = urlParts[1].split("&");
@@ -455,11 +454,6 @@ var urlVars = function() {
 
 $("#jobs").live("pageshow", function() {
 	// this is refering to this page
-	var job = urlVars()["job"];
-	//console.log(job);
-	$.couch.db("asdproject").view("app/additions",{
-		key: "Addition" + Addition
-	});
 	var urlData = $($.mobile.activePage).data("url");
 });
 

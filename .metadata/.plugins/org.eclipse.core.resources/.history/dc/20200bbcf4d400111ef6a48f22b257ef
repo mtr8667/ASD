@@ -458,7 +458,7 @@ $("#jobs").live("pageshow", function() {
 	var job = urlVars()["job"];
 	//console.log(job);
 	$.couch.db("asdproject").view("app/additions",{
-		key: "Addition" + Addition
+		key: "projectType" + projectType
 	});
 	var urlData = $($.mobile.activePage).data("url");
 });
