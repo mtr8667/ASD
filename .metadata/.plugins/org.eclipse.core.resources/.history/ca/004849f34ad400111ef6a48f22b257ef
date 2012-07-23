@@ -722,44 +722,6 @@
 			</div>
 		</div>	
 	</div>
-<!-- couch contacts page -->
-	<div data-role="page" id="couchcontacts" data-add-back-btn="true" data-transition="pop">
-		
-		<!-- contacts page header -->
-		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<!-- Catagory List -->
-		<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-mini="true">
-					<li>
-							<img src="r.png"/>
-							<h3>Contact Information</h3>
-					</li>	
-				</ul>	
-		</div>
-		<div data-role="content">
-			<div data-role="collapsible-set">
-				<ul data-role="listview" id="couchcontactsList" data-filter="true" data-inset="true" data-mini="true">
-				</ul>
-			</div>	
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
-				</ul>			
-			</div>
-		</div>	
-	</div>
 	<!-- JavaScript under here -->
 	<script type="text/javascript" src="jquery.validate.min.js"></script>	
 	<script src="main.js" type="text/javascript"></script>

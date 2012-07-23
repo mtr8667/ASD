@@ -48,21 +48,9 @@ $(function(){
 
 //$("#home").on('pageinit',function(){
 $("#home").live("pageshow", function() {
-	$.couch.db("asdproject").view("app/projects", {
+	$.couch.db("asdproject").view("app/contacts", {
 		success: function(data) {
-			//console.log(data);
-			$("#dataHolder").empty();
-			$.each(data.rows, function(index, value){
-				var item = (value.value || value.doc);
-				$("#dataHolder").append(
-					$("<li>").append(
-							$("<a>")
-								.attr("href", "projects.html")
-								.text(item.projectType)
-					)	
-				);
-			});
-			$("#dataHolder").listview("refresh");
+			console.log(data);
 		}
 	});
 

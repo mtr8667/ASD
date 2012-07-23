@@ -50,11 +50,11 @@ $(function(){
 $("#home").live("pageshow", function() {
 	$.couch.db("asdproject").view("app/projects", {
 		success: function(data) {
-			//console.log(data);
-			$("#dataHolder").empty();
-			$.each(data.rows, function(index, value){
+			console.log(data);
+			$("projectsList").empty();
+			$.each(data.row, function(index, value){
 				var item = (value.value || value.doc);
-				$("#dataHolder").append(
+				$("#projectsList").append(
 					$("<li>").append(
 							$("<a>")
 								.attr("href", "projects.html")
@@ -62,7 +62,7 @@ $("#home").live("pageshow", function() {
 					)	
 				);
 			});
-			$("#dataHolder").listview("refresh");
+			#("#projectsList").listview("refresh");
 		}
 	});
 

@@ -46,27 +46,7 @@ $(function(){
 
 
 
-//$("#home").on('pageinit',function(){
-$("#home").live("pageshow", function() {
-	$.couch.db("asdproject").view("app/projects", {
-		success: function(data) {
-			//console.log(data);
-			$("#dataHolder").empty();
-			$.each(data.rows, function(index, value){
-				var item = (value.value || value.doc);
-				$("#dataHolder").append(
-					$("<li>").append(
-							$("<a>")
-								.attr("href", "projects.html")
-								.text(item.projectType)
-					)	
-				);
-			});
-			$("#dataHolder").listview("refresh");
-		}
-	});
-
-
+$("#home").on('pageinit',function(){
 // get JSON
 	$("#getJSON").on("click", function(){
 		console.log("#getJSON");
@@ -433,10 +413,15 @@ $('#contacts').on('pageinit', function () {
 	    	}
 	    });
 });
+$("couchcontacts").live("pageshow", function() {
+	$couch.db("asdproject").view("app/contacts", {
+		success: function(data) {
+			console.log(data);
+		}
+	});
+});
 
 
-
-// new end of $(home)
 });
 
 $("#newProject").on('pageinit',function(){

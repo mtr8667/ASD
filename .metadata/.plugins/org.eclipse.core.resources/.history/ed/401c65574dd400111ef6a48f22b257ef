@@ -46,27 +46,7 @@ $(function(){
 
 
 
-//$("#home").on('pageinit',function(){
-$("#home").live("pageshow", function() {
-	$.couch.db("asdproject").view("app/projects", {
-		success: function(data) {
-			//console.log(data);
-			$("#dataHolder").empty();
-			$.each(data.rows, function(index, value){
-				var item = (value.value || value.doc);
-				$("#dataHolder").append(
-					$("<li>").append(
-							$("<a>")
-								.attr("href", "projects.html")
-								.text(item.projectType)
-					)	
-				);
-			});
-			$("#dataHolder").listview("refresh");
-		}
-	});
-
-
+$("#home").on('pageinit',function(){
 // get JSON
 	$("#getJSON").on("click", function(){
 		console.log("#getJSON");
@@ -199,8 +179,7 @@ $("#home").live("pageshow", function() {
 		return false;
 // I used http://stackoverflow.com/questions/7431268/how-read-data-from-csv-file-using-javascript to help with the $("#getCSV")
 });
-// end on initial $(home)
-//});
+});
 
 // ajax call to the couchDB files containing the additions value displaying in the #additionsList UL on the additions page I've changed this to try and create a collapsible list 
 $('#additions').on('pageinit', function () {   
@@ -436,8 +415,7 @@ $('#contacts').on('pageinit', function () {
 
 
 
-// new end of $(home)
-});
+//});
 
 $("#newProject").on('pageinit',function(){
 

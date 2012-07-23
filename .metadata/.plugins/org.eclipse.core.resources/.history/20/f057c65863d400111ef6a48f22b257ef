@@ -52,7 +52,7 @@ $("#home").live("pageshow", function() {
 		success: function(data) {
 			//console.log(data);
 			$("#dataHolder").empty();
-			$.each(data.rows, function(index, value){
+			$.each(data.row, function(index, value){
 				var item = (value.value || value.doc);
 				$("#dataHolder").append(
 					$("<li>").append(
