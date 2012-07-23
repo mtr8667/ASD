@@ -57,7 +57,7 @@ $("#home").live("pageshow", function() {
 				$("#dataHolder").append(
 					$("<li>").append(
 							$("<a>")
-								.attr("href", "jobs.html?job=" + item.projectType ) 
+								.attr("href", "jobs.html?job=" + item.projectType)
 								.text(item.projectName)
 					)	
 				);

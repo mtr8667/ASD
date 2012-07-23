@@ -57,7 +57,7 @@ $("#home").live("pageshow", function() {
 				$("#dataHolder").append(
 					$("<li>").append(
 							$("<a>")
-								.attr("href", "jobs.html?job=" + item.projectType ) 
+								.attr("href", "jobs.html?job=" + item.projectType)
 								.text(item.projectName)
 					)	
 				);
@@ -458,7 +458,7 @@ $("#jobs").live("pageshow", function() {
 	var job = urlVars()["job"];
 	//console.log(job);
 	$.couch.db("asdproject").view("app/additions",{
-		key: projectName
+		key: "projectName" + projectName
 	});
 	var urlData = $($.mobile.activePage).data("url");
 });
