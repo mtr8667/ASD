@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="12" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="1326" width="830" x="921" y="23">
+<window height="1326" width="983" x="898" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -10,6 +10,9 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="40" y="22"/>
+<coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="32" y="22"/>
@@ -20,6 +23,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -33,17 +38,47 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" partName="map.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/views/contacts/map.js" title="map.js" tooltip="couchdb/app/views/contacts/map.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/views/contacts/map.js"/>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="main.js" partName="main.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/main.js" title="main.js" tooltip="couchdb/app/_attachments/main.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/main.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="26458" selectionTopPixel="2715"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" partName="index.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/index.html" title="index.html" tooltip="couchdb/app/_attachments/index.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/index.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="27987" selectionOffset="0" selectionTopPixel="10497"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sample.js" partName="sample.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/sample.js" title="sample.js" tooltip="couchdb/app/_attachments/sample.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/sample.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="167" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" partName="map.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/views/projects/map.js" title="map.js" tooltip="couchdb/app/views/projects/map.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/views/projects/map.js"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="main.js" partName="main.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/main.js" title="main.js" tooltip="couchdb/app/_attachments/main.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/main.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14599" selectionTopPixel="4740"/>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="jobs.html" partName="jobs.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/jobs.html" title="jobs.html" tooltip="couchdb/app/_attachments/jobs.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/jobs.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="728" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.css.core.csssource.source" name="style.css" partName="style.css" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/style.css" title="style.css" tooltip="couchdb/app/_attachments/style.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/style.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7714" selectionTopPixel="612"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="oldindex.html" partName="oldindex.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/oldindex.html" title="oldindex.html" tooltip="couchdb/app/_attachments/oldindex.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/oldindex.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="27987" selectionTopPixel="10500"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="oldmain.js" partName="oldmain.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/oldmain.js" title="oldmain.js" tooltip="couchdb/app/_attachments/oldmain.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/oldmain.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8977" selectionTopPixel="2654"/>
 </editor>
 </editors>
 <views>
@@ -57,6 +92,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.wst.jsdt.ui.PackageExplorer" partName="Script Explorer">
 <viewState group_libraries="1" isWindowWorkingSet="false" layout="1" linkWithEditor="1" rootMode="1" workingSetName="">
@@ -76,7 +114,7 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.eclipse.wst.jsdt.ui.PackageExplorer" activePerspective="org.eclipse.wst.jsdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.wst.jsdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.wst.jsdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.wst.jsdt.ui.JavaPerspective" label="JavaScript"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -91,6 +129,10 @@
 <alwaysOnActionSet id="org.eclipse.wst.jsdt.ui.JavaActionSet"/>
 <alwaysOnActionSet id="org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="adt.actionSet.lint"/>
 <show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <show_view_action id="org.eclipse.wst.jsdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.wst.jsdt.ui.TypeHierarchy"/>
@@ -119,6 +161,7 @@
 <view id="org.eclipse.wst.jsdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.wst.jsdt.ui.JavadocView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -143,13 +186,13 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.wst.jsdt.ui.JavadocView" label="Documentation"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.wst.jsdt.ui.SourceView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
@@ -157,6 +200,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -173,82 +217,165 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.pittypanda.plugins.couch.editor" path="/couchdb/couchapp.rc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/couchdb/app/couchapp.json"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/couchdb/app/_id"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/additions/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/basements/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/kitchens/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/lavatories/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/roofs/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/projects/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/contacts/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/couchdb/couchapp.rc"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/_attachments/main.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/types.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/projects.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/jobs.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/couchdb/app/_attachments/style.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/_attachments/sample.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/oldindex.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/_attachments/oldmain.js"/>
 </editors>
-<item historyLabel="couchapp.rc" index="0">
-<position info="not_deleted" x="186" y="0"/>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="3093" y="0"/>
 </item>
-<item historyLabel="couchapp.json" index="1">
-<position info="not_deleted" x="61" y="0"/>
+<item historyLabel="types.html" index="2">
+<position info="not_deleted" x="438" y="0"/>
 </item>
-<item historyLabel="_id" index="2">
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="3093" y="0"/>
+</item>
+<item historyLabel="types.html" index="2">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="3093" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16867" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16869" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16865" y="0"/>
+</item>
+<item historyLabel="types.html" index="2">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16865" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position/>
+</item>
+<item historyLabel="main.js" index="0">
+<position/>
+</item>
+<item historyLabel="main.js" index="0">
+<position/>
+</item>
+<item historyLabel="main.js" index="0">
+<position/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="3173" y="0"/>
+</item>
+<item historyLabel="index.html" index="1">
+<position info="not_deleted" x="27811" y="176"/>
+</item>
+<item historyLabel="types.html" index="2">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="projects.html" index="3">
+<position info="not_deleted" x="641" y="14"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="3173" y="0"/>
+</item>
+<item historyLabel="projects.html" index="3">
+<position info="not_deleted" x="641" y="14"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="3173" y="0"/>
+</item>
+<item historyLabel="projects.html" index="3">
+<position info="not_deleted" x="641" y="14"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="3173" y="0"/>
+</item>
+<item historyLabel="index.html" index="1">
+<position info="not_deleted" x="27811" y="176"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="3173" y="0"/>
+</item>
+<item historyLabel="projects.html" index="3">
+<position info="not_deleted" x="641" y="14"/>
+</item>
+<item historyLabel="jobs.html" index="4">
+<position info="not_deleted" x="427" y="0"/>
+</item>
+<item historyLabel="style.css" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="couchapp.json" index="1">
-<position info="not_deleted" x="61" y="0"/>
+<item historyLabel="jobs.html" index="4">
+<position info="not_deleted" x="427" y="0"/>
 </item>
-<item historyLabel="map.js" index="3">
-<position info="not_deleted" x="412" y="0"/>
+<item historyLabel="style.css" index="5">
+<position info="not_deleted" x="7714" y="0"/>
 </item>
-<item historyLabel="map.js" index="4">
-<position info="not_deleted" x="412" y="0"/>
+<item historyLabel="main.js" index="0">
+<position/>
 </item>
-<item historyLabel="map.js" index="5">
-<position info="not_deleted" x="411" y="0"/>
+<item historyLabel="jobs.html" index="4">
+<position info="not_deleted" x="728" y="0"/>
 </item>
-<item historyLabel="map.js" index="6">
-<position info="not_deleted" x="51" y="0"/>
+<item historyLabel="main.js" index="0">
+<position/>
 </item>
-<item historyLabel="map.js" index="7">
-<position info="not_deleted" x="47" y="0"/>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16611" y="0"/>
 </item>
-<item historyLabel="map.js" index="8">
-<position info="not_deleted" x="456" y="0"/>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16814" y="0"/>
 </item>
-<item historyLabel="map.js" index="9">
-<position info="not_deleted" x="212" y="0"/>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16812" y="0"/>
 </item>
-<item historyLabel="map.js" index="8">
-<position info="not_deleted" x="456" y="0"/>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16807" y="0"/>
 </item>
-<item historyLabel="map.js" index="7">
-<position info="not_deleted" x="47" y="0"/>
+<item historyLabel="sample.js" index="6">
+<position info="not_deleted" x="167" y="0"/>
 </item>
-<item historyLabel="map.js" index="6">
-<position info="not_deleted" x="51" y="0"/>
+<item historyLabel="jobs.html" index="4">
+<position info="not_deleted" x="728" y="0"/>
 </item>
-<item historyLabel="map.js" index="5">
-<position info="not_deleted" x="411" y="0"/>
+<item historyLabel="index.html" index="1">
+<position info="not_deleted" x="27811" y="176"/>
 </item>
-<item historyLabel="map.js" index="4">
-<position info="not_deleted" x="412" y="0"/>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="16713" y="0"/>
 </item>
-<item historyLabel="map.js" index="3">
-<position info="not_deleted" x="412" y="0"/>
+<item historyLabel="oldindex.html" index="7">
+<position info="not_deleted" x="27987" y="0"/>
 </item>
-<item historyLabel="couchapp.json" index="1">
-<position info="not_deleted" x="61" y="0"/>
+<item historyLabel="index.html" index="1">
+<position info="not_deleted" x="0" y="27987"/>
 </item>
-<item historyLabel="couchapp.rc" index="10">
-<position info="not_deleted" x="186" y="0"/>
+<item historyLabel="oldindex.html" index="7">
+<position info="not_deleted" x="27987" y="0"/>
 </item>
-<item historyLabel="couchapp.rc" index="0"/>
-<item historyLabel="map.js" index="9">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="oldmain.js" index="8">
+<position info="not_deleted" x="26965" y="0"/>
 </item>
-<item active="true" historyLabel="main.js" index="11">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="0" y="26965"/>
+</item>
+<item historyLabel="oldmain.js" index="8">
+<position info="not_deleted" x="8977" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="26458" y="0"/>
+</item>
+<item active="true" historyLabel="oldmain.js" index="8">
+<position info="not_deleted" x="8977" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -256,6 +383,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -263,18 +393,40 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="oldmain.js" tooltip="couchdb/app/_attachments/oldmain.js">
+<persistable path="/couchdb/app/_attachments/oldmain.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="oldindex.html" tooltip="couchdb/app/_attachments/oldindex.html">
+<persistable path="/couchdb/app/_attachments/oldindex.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="style.css" tooltip="couchdb/app/_attachments/style.css">
+<persistable path="/couchdb/app/_attachments/style.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="types.html" tooltip="couchdb/app/_attachments/types.html">
+<persistable path="/couchdb/app/_attachments/types.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="jquery.couch.js" tooltip="couchdb/app/_attachments/jquery.couch.js">
+<persistable path="/couchdb/app/_attachments/jquery.couch.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/projects/map.js">
+<persistable path="/couchdb/app/views/projects/map.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sample.js" tooltip="couchdb/app/_attachments/sample.js">
+<persistable path="/couchdb/app/_attachments/sample.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="couchdb/app/_attachments/index.html">
+<persistable path="/couchdb/app/_attachments/index.html"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="main.js" tooltip="couchdb/app/_attachments/main.js">
 <persistable path="/couchdb/app/_attachments/main.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/contacts/map.js">
 <persistable path="/couchdb/app/views/contacts/map.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/projects/map.js">
-<persistable path="/couchdb/app/views/projects/map.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/roofs/map.js">
 <persistable path="/couchdb/app/views/roofs/map.js"/>
@@ -290,15 +442,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/additions/map.js">
 <persistable path="/couchdb/app/views/additions/map.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="_id" tooltip="couchdb/app/_id">
-<persistable path="/couchdb/app/_id"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="couchapp.json" tooltip="couchdb/app/couchapp.json">
-<persistable path="/couchdb/app/couchapp.json"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="couchapp.rc" tooltip="couchdb/couchapp.rc">
-<persistable path="/couchdb/couchapp.rc"/>
 </file>
 </mruList>
 </workbench>

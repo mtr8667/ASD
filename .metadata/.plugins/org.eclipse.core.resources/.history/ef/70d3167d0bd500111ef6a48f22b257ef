@@ -459,7 +459,7 @@ $("#jobs").live("pageshow", function() {
 	console.log(job);
 //	$.couch.db("asdproject").view("app/additions",{
 	//	key: projectName
-//	});
+	});
 	var urlData = $($.mobile.activePage).data("url");
 });
 

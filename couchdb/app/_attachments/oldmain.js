@@ -785,5 +785,3 @@ $("#additions").on('pageinit',function(){
 	
 	
 	
-
-
