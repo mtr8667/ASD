@@ -57,7 +57,7 @@ $("#home").live("pageshow", function() {
 				$("#dataHolder").append(
 					$("<li>").append(
 							$("<a>")
-								.attr("href", "types.html?program=" + item.projectType)
+								.attr("href", "projects.html?program=" + item.projectType)
 								.text(item.projectName)
 					)	
 				);
@@ -438,21 +438,7 @@ $('#contacts').on('pageinit', function () {
 
 // new end of $(home)
 });
-$("#types").live("pageshow", function() {
-	// this is refering to this page
-	var urlData = $(this).data("url");
-	var urlParts = urlData.split("?");
-	// foo?a=1&b=2&c=3 etc...is my case its 10
-	var urlPairs = urlParts[1].split("&");
-	var urlValues = {};
-	for (var pair in urlPairs) {
-		var keyValue = urlPairs[pair].split("=");
-		var key = decodeURIComponent(keyValue[0]);
-		var value = decodeURIComponent(keyValue[1]);
-		urlValues[key] = value;
-	}
-	console.log(urlData);
-});
+
 $("#newProject").on('pageinit',function(){
 
 	var element = $(document),

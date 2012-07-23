@@ -448,7 +448,7 @@ $("#types").live("pageshow", function() {
 	for (var pair in urlPairs) {
 		var keyValue = urlPairs[pair].split("=");
 		var key = decodeURIComponent(keyValue[0]);
-		var value = decodeURIComponent(keyValue[1]);
+		var Value = decodeURIComponent(keyValue[1]);
 		urlValues[key] = value;
 	}
 	console.log(urlData);
