@@ -1,7 +1,9 @@
 function(doc) {
   if (doc.projectType === "Addition") {
     emit(doc.projectType, {
-    	 "projectName": doc.projectName,
+    	"_id":			doc._id,
+  	 	 "_rev":		doc._rev, 
+    	"projectName": doc.projectName,
     	 "firstName": doc.firstName,
     	 "lastName": doc.lastName,
     	 "email": doc.email,

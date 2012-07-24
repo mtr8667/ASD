@@ -45,7 +45,7 @@
 <body>
 	
 <!-- home page -->
-	<div data-role="page" id="home">
+	<div data-role="page" id="home" data-transition="slide">
 		
 		<!-- home page header -->
 		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
@@ -86,10 +86,7 @@
 		<div data-role="footer" data-position="fixed" data-id="footer">
 				<div data-role="navbar">
 					<ul id="footerUl">
-						<li><a href="#home" data-icon="home"  data-transition="fade">home</a></li>
-						<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="fade">gold</a></li>
-						<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="fade">bronze</a></li>
-						<li><a href="#feedback" data-icon="info" data-transition="fade">extra</a></li>
+						<li><a href="#home"  data-transition="slide">home</a></li>
 					</ul>			
 				</div>
 		</div>
@@ -97,7 +94,7 @@
 	</div>
 	
 <!-- new project form page -->
-	<div data-role="page" id="newProject"  data-add-back-btn="true" data-transition="fade">
+	<div data-role="page" id="newProject"  data-add-back-btn="true" data-transition="slide">
 		
 		<!-- new project page Header -->
 		<div data-role="header" data-position="fixed" data-id="header">
@@ -281,130 +278,13 @@
 			
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home" data-transition="fade">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="fade">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="fade">bronze</a></li>
-					<li><a href="#feedback" data-icon="info" data-transition="fade">extra</a></li>				
+					<li><a href="#home" data-transition="slide">home</a></li>
 				</ul>			
 			</div>
 		
 		</div>
 	</div>	<!-- newProject end -->	
 		
-	
-	
-<!-- feedback (module) tab page &  responsive disclosure-->
-	<div data-role="page" id="feedback" data-add-back-btn="true" data-transition="fade">
-		
-		<div data-role="header" data-position="fixed" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<div data-role="content" data-id="module">	
-			<div data-role="navbar" >
-				<ul>
-					<li><a href="#feedback" class="ui-btn-active" data-transition="fade">feedback</a></li>
-					<li><a href="#jobreporting" data-transition="fade">job reporting</a></li>
-				</ul>			
-			</div>
-			<div data-role="fieldcontain" >
-					<p>Does the customer want updates on their project?</p>
-					<fieldset data-role="controlgroup">
-						<legend></legend>
-						<input type="radio" value="yes" name="update" id="update-1" />
-						<label for="update-1">Yes</label>
-						<input type="radio" value="no" name="update" id="update-2" />
-						<label for="update-2">No</label>
-					</fieldset>
-			</div>
-			<div data-role="fieldcontain" >
-					<p>Does the customer want weekly or monthly updates?</p>
-					<fieldset data-role="controlgroup">
-						<legend></legend>
-						<input type="radio" value="weekly" name="frequency" id="frequency-1" />
-						<label for="frequency-1">weekly</label>
-						<input type="radio" value="monthly" name="frequency" id="frequency-2" />
-						<label for="frequency-2">monthly</label>
-					</fieldset>
-			</div>
-			<div data-role="fieldcontain">
-				<div>
-						<center>
-							<p><small id="footer"> &copy; 2012 BBTmobi.com All Rights Reserved.</small></p>
-						</center>
-				</div>
-			</div>	
-		</div>
-		<!-- feedback (module) tab page &  responsive disclosure Footer -->
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home" data-transition="fade">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="fade">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="fade">bronze</a></li>
-					<li><a href="#feedback" data-icon="info" data-transition="fade">extra</a></li>
-				</ul>			
-			</div>
-		
-		</div>
-	
-	</div>
-	
-<!-- jobreporting (module) tab page -->
-	<div data-role="page" id="jobreporting" data-add-back-btn="true" data-transition="fade">
-		
-		<div data-role="header" data-position="fixed" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<div data-role="content" data-id="module">	
-			<div data-role="navbar" >
-				<ul>
-					<li><a href="#feedback" data-transition="fade" >feedback</a></li>
-					<li><a href="#jobreporting" class="ui-btn-active" data-transition="fade" >job reporting</a></li>
-				</ul>			
-			</div>
-			<div data-role="fieldcontain" >
-					<label for="projects">Projects</label>
-					<select name="projects" id="projects" data-native-menu="false" data-mini="true">
-						<optgroup label="Projects">
-							<option value="addition">Richter Addition</option>
-							<option value="basement">Stires Basement</option>
-							<option value="kitchen">Roth Kitchen</option>
-							<option value="lavatory">Debby Lavatory</option>
-							<option value="roof">Oraschin Roof</option>
-						</optgroup>
-					</select>
-			</div>
-			<div>
-				<center>
-					<p><small id="footer"> &copy; 2012 BBTmobi.com All Rights Reserved.</small></p>
-				</center>
-			</div>
-		</div>	
-		<!-- jobreporting (module) tab page Footer -->
-		
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home" data-transition="fade">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="fade">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="fade">bronze</a></li>
-					<li><a href="#feedback" data-icon="info" data-transition="fade">extra</a></li>
-				</ul>			
-			</div>	
-		</div>
-	</div>
-	
 <!-- Underconstruction page -->
 	<div data-role="page" id="underconstruction" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
@@ -430,280 +310,12 @@
 		<div data-role="footer" data-position="fixed" data-id="footer">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
+					<li><a href="#home" >home</a></li>
 				</ul>			
 			</div>
 		</div>	
 	</div>
-<!-- Additions page -->
-	<div data-role="page" id="additions" data-add-back-btn="true" data-transition="pop">
-		
-		<!-- Additions page header -->
-		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<!-- Catagory List -->
-		<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-mini="true">
-					<li>
-							<img src="a.png"/>
-							<h3>Additions</h3>
-					</li>	
-				</ul>	
-		</div>
-		<div data-role="content">
-			<div data-role="collapsible-set">
-				<ul data-role="listview" id="additionsList" data-filter="true" data-inset="true" data-mini="true">
-				</ul>
-			</div>	
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
-				</ul>			
-			</div>
-		</div>	
-	</div>
-<!-- basements page -->
-	<div data-role="page" id="basements" data-add-back-btn="true" data-transition="pop">
-		
-		<!-- basements page header -->
-		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<!-- Catagory List -->
-		<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-mini="true">
-					<li>
-							<img src="b.png"/>
-							<h3>Basements</h3>
-					</li>	
-				</ul>	
-		</div>
-		<div data-role="content">
-			<div data-role="collapsible-set">
-				<ul data-role="listview" id="basementsList" data-filter="true" data-inset="true" data-mini="true">
-				</ul>
-			</div>	
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
-				</ul>			
-			</div>
-		</div>	
-	</div>
-<!-- kitchens page -->
-	<div data-role="page" id="kitchens" data-add-back-btn="true" data-transition="pop">
-		
-		<!-- kitchens page header -->
-		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<!-- Catagory List -->
-		<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-mini="true">
-					<li>
-							<img src="k.png"/>
-							<h3>Kitchens</h3>
-					</li>	
-				</ul>	
-		</div>
-		<div data-role="content">
-			<div data-role="collapsible-set">
-				<ul data-role="listview" id="kitchensList" data-filter="true" data-inset="true" data-mini="true">
-				</ul>
-			</div>	
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
-				</ul>			
-			</div>
-		</div>	
-	</div>
-<!-- lavatories page -->
-	<div data-role="page" id="lavatories" data-add-back-btn="true" data-transition="pop">
-		
-		<!-- lavatories page header -->
-		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<!-- Catagory List -->
-		<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-mini="true">
-					<li>
-							<img src="l.png"/>
-							<h3>Lavatories</h3>
-					</li>	
-				</ul>	
-		</div>
-		<div data-role="content">
-			<div data-role="collapsible-set">
-				<ul data-role="listview" id="lavatoriesList" data-filter="true" data-inset="true" data-mini="true">
-				</ul>
-			</div>	
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
-				</ul>			
-			</div>
-		</div>	
-	</div>
-<!-- roofs page -->
-	<div data-role="page" id="roofs" data-add-back-btn="true" data-transition="pop">
-		
-		<!-- roofs page header -->
-		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<!-- Catagory List -->
-		<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-mini="true">
-					<li>
-							<img src="r.png"/>
-							<h3>Roofs</h3>
-					</li>	
-				</ul>	
-		</div>
-		<div data-role="content">
-			<div data-role="collapsible-set">
-				<ul data-role="listview" id="roofsList" data-filter="true" data-inset="true" data-mini="true">
-				</ul>
-			</div>	
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
-				</ul>			
-			</div>
-		</div>	
-	</div>
-<!-- contacts page -->
-	<div data-role="page" id="contacts" data-add-back-btn="true" data-transition="pop">
-		
-		<!-- contacts page header -->
-		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<!-- Catagory List -->
-		<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-mini="true">
-					<li>
-							<img src="r.png"/>
-							<h3>Contact Information</h3>
-					</li>	
-				</ul>	
-		</div>
-		<div data-role="content">
-			<div data-role="collapsible-set">
-				<ul data-role="listview" id="contactsList" data-filter="true" data-inset="true" data-mini="true">
-				</ul>
-			</div>	
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
-				</ul>			
-			</div>
-		</div>	
-	</div>
-<!-- couch contacts page -->
-	<div data-role="page" id="couchcontacts" data-add-back-btn="true" data-transition="pop">
-		
-		<!-- contacts page header -->
-		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="logob.png"/>
-			</center>
-		</div>
-		<!-- Catagory List -->
-		<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-mini="true">
-					<li>
-							<img src="r.png"/>
-							<h3>Contact Information</h3>
-					</li>	
-				</ul>	
-		</div>
-		<div data-role="content">
-			<div data-role="collapsible-set">
-				<ul data-role="listview" id="couchcontactsList" data-filter="true" data-inset="true" data-mini="true">
-				</ul>
-			</div>	
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
-					<li><a href="#feedback" data-icon="info">extra</a></li>
-				</ul>			
-			</div>
-		</div>	
-	</div>
+
 	<!-- JavaScript under here -->
 	<script type="text/javascript" src="jquery.validate.min.js"></script>	
 	<script src="main.js" type="text/javascript"></script>

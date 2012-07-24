@@ -1,9 +1,8 @@
 function(doc) {
-  if (doc.projectType === "Lavatory") {
-    emit(doc.projectType, {
-    	"_id":			doc._id,
-  	 	 "_rev":		doc._rev, 
-    	"projectName": doc.projectName,
+  if (doc._id.substr(0,9) ==="JobGenie:") {
+    emit(doc._id.substr(9), {
+    	 "projectType": doc.projectType,
+    	 "projectName": doc.projectName,
     	 "firstName": doc.firstName,
     	 "lastName": doc.lastName,
     	 "email": doc.email,

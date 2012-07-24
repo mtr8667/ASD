@@ -1,6 +1,8 @@
 function(doc) {
   if (doc.projectType === "Roof") {
     emit(doc.projectType, {
+    	 "_id":			doc._id,
+   	 	 "_rev":		doc._rev,
     	 "projectName": doc.projectName,
     	 "firstName": doc.firstName,
     	 "lastName": doc.lastName,

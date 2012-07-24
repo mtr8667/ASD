@@ -13,7 +13,7 @@
 <body>
 	
 <!-- home page -->
-	<div data-role="page" id="sections" data-add-back-btn="true" data-transition="slide">
+	<div data-role="page" id="sections" data-add-back-btn="true">
 		
 		<!-- home page header -->
 		<div data-role="header" data-position="fixed"  data-theme="a" data-id="header">
@@ -43,8 +43,10 @@
 		<div data-role="footer" data-position="fixed" data-id="footer">
 				<div data-role="navbar">
 					<ul id="footerUl">
-						<li><a href="#home"  data-transition="slide">home</a></li>
-						
+						<li><a href="#home" data-icon="home"  data-transition="fade">home</a></li>
+						<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="fade">gold</a></li>
+						<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="fade">bronze</a></li>
+						<li><a href="#feedback" data-icon="info" data-transition="fade">extra</a></li>
 					</ul>			
 				</div>
 		</div>

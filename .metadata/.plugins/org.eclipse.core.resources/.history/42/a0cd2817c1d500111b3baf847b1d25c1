@@ -98,7 +98,7 @@ $("#sections").live("pageshow", function() {
 				$("#sectionList").append(
 					$("<li>").append(
 							$("<a>")
-								.attr("href", "detail.html?_id=" + item._id) 
+								.attr("href", "detail.html?detail=" + item.projectName) 
 								.text(item.projectName)
 					)	
 				);
@@ -109,6 +109,244 @@ $("#sections").live("pageshow", function() {
 //	var urlData = $($.mobile.activePage).data("url");
 	
 });  
+		
+// ajax call to the couchDB files containing the additions value displaying in the #additionsList UL on the additions page I've changed this to try and create a collapsible list 
+$('#additions').on('pageinit', function () {   
+	$("#additionsList").empty();
+		$.ajax({
+	    	"url": 		"_view/additions",
+	    	"dataType":	"json",
+	    	"success": function(data) {
+	    		console.log(data);
+	    		
+	    		$.each(data.rows, function(index, addition){
+//	    			var projectType = addition.value.projectType;
+	    			var projectName = addition.value.projectName;
+	    	    	var firstName = addition.value.firstName;
+	    	    	var lastName = addition.value.lastName;
+	    	    	var email = addition.value.email;
+	    	    	var phone = addition.value.phone;
+	    	    	var emailBest = addition.value.emailBest;
+	    	    	var cost = addition.value.cost;
+	    	    	var priority = addition.value.priority;
+	    	    	var startDate = addition.value.startDate;
+	    	    	var jobNotes = addition.value.jobNotes;
+
+	    	    		$("#additionsList").append(
+	    	    				$("<li>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
+	    		});
+	    		$("#additionsList").listview("refresh");
+	    	}
+	    });
+});
+$('#basements').on('pageinit', function () {   
+	$("#basementsList").empty();
+		$.ajax({
+	    	"url": 		"_view/basements",
+	    	"dataType":	"json",
+	    	"success": function(data) {
+	    		console.log(data);
+	    		
+	    		$.each(data.rows, function(index, basement){
+//	    			var projectType = basement.value.projectType;
+	    			var projectName = basement.value.projectName;
+	    	    	var firstName = basement.value.firstName;
+	    	    	var lastName = basement.value.lastName;
+	    	    	var email = basement.value.email;
+	    	    	var phone = basement.value.phone;
+	    	    	var emailBest = basement.value.emailBest;
+	    	    	var cost = basement.value.cost;
+	    	    	var priority = basement.value.priority;
+	    	    	var startDate = basement.value.startDate;
+	    	    	var jobNotes = basement.value.jobNotes;
+// 
+	    	    		$("#basementsList").append(
+	    	    				$("<li>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
+	    		});
+	    		$("#basementsList").listview("refresh");
+	    	}
+	    });
+});
+$('#kitchens').on('pageinit', function () {   
+	$("#kitchensList").empty();
+		$.ajax({
+	    	"url": 		"_view/kitchens",
+	    	"dataType":	"json",
+	    	"success": function(data) {
+	    		console.log(data);
+	    		
+	    		$.each(data.rows, function(index, kitchen){
+//	    			var projectType = kitchen.value.projectType;
+	    			var projectName = kitchen.value.projectName;
+	    	    	var firstName = kitchen.value.firstName;
+	    	    	var lastName = kitchen.value.lastName;
+	    	    	var email = kitchen.value.email;
+	    	    	var phone = kitchen.value.phone;
+	    	    	var emailBest = kitchen.value.emailBest;
+	    	    	var cost = kitchen.value.cost;
+	    	    	var priority = kitchen.value.priority;
+	    	    	var startDate = kitchen.value.startDate;
+	    	    	var jobNotes = kitchen.value.jobNotes;
+
+	    	    		$("#kitchensList").append(
+	    	    				$("<li>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
+	    		});
+	    		$("#kitchensList").listview("refresh");
+	    	}
+	    });
+});
+$('#lavatories').on('pageinit', function () {   
+	$("#lavatoriesList").empty();
+		$.ajax({
+	    	"url": 		"_view/lavatories",
+	    	"dataType":	"json",
+	    	"success": function(data) {
+	    		console.log(data);
+	    		
+	    		$.each(data.rows, function(index, lavatory){
+//	    			var projectType = lavatory.value.projectType;
+	    			var projectName = lavatory.value.projectName;
+	    	    	var firstName = lavatory.value.firstName;
+	    	    	var lastName = lavatory.value.lastName;
+	    	    	var email = lavatory.value.email;
+	    	    	var phone = lavatory.value.phone;
+	    	    	var emailBest = lavatory.value.emailBest;
+	    	    	var cost = lavatory.value.cost;
+	    	    	var priority = lavatory.value.priority;
+	    	    	var startDate = lavatory.value.startDate;
+	    	    	var jobNotes = lavatory.value.jobNotes;
+
+	    	    		$("#lavatoriesList").append(
+	    	    				$("<li>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
+	    		});
+	    		$("#lavatoriesList").listview("refresh");
+	    	}
+	    });
+});
+$('#roofs').on('pageinit', function () {   
+	$("#roofsList").empty();
+		$.ajax({
+	    	"url": 		"_view/roofs",
+	    	"dataType":	"json",
+	    	"success": function(data) {
+	    		console.log(data);
+	    		
+	    		$.each(data.rows, function(index, roof){
+//	    			var projectType = roof.value.projectType;
+	    			var projectName = roof.value.projectName;
+	    	    	var firstName = roof.value.firstName;
+	    	    	var lastName = roof.value.lastName;
+	    	    	var email = roof.value.email;
+	    	    	var phone = roof.value.phone;
+	    	    	var emailBest = roof.value.emailBest;
+	    	    	var cost = roof.value.cost;
+	    	    	var priority = roof.value.priority;
+	    	    	var startDate = roof.value.startDate;
+	    	    	var jobNotes = roof.value.jobNotes;
+
+	    	    		$("#roofsList").append(
+	    	    				$("<li>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    						.append($("<p>").text(emailBest))
+	    	    						.append($("<p>").text(cost))
+	    	    						.append($("<p>").text(priority))
+	    	    						.append($("<p>").text(startDate))
+	    	    						.append($("<p>").text(jobNotes))
+	    	    				);
+	    		});
+	    		$("#roofsList").listview("refresh");
+	    	}
+	    });
+});
+$('#contacts').on('pageinit', function () {   
+	$("#contactsList").empty();
+		$.ajax({
+	    	"url": 		"_view/contacts",
+	    	"dataType":	"json",
+	    	"success": function(data) {
+	    		console.log(data);
+	    		
+	    		$.each(data.rows, function(index, roof){
+//	    			var projectType = roof.value.projectType;
+	    			var projectName = roof.value.projectName;
+	    	    	var firstName = roof.value.firstName;
+	    	    	var lastName = roof.value.lastName;
+	    	    	var email = roof.value.email;
+	    	    	var phone = roof.value.phone;
+
+	    	    		$("#contactsList").append(
+	    	    				$("<li>").attr("data-role", 
+	    	    						"collapsible").attr("data-collapsed", "true")
+	    	    						.append($("<h3>").text(projectName))
+	    	    						.append($("<p>").text(firstName))
+	    	    						.append($("<p>").text(lastName))
+	    	    						.append($("<p>").text(email))
+	    	    						.append($("<p>").text(phone))
+	    	    				);
+	    		});
+	    		$("#contactsList").listview("refresh");
+	    	}
+	    });
+});
+
+
+
+// new end of $(home)
+
+
 
 $("#newProject").on('pageinit',function(){
 

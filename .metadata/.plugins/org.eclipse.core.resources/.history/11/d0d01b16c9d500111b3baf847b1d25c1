@@ -98,7 +98,7 @@ $("#sections").live("pageshow", function() {
 				$("#sectionList").append(
 					$("<li>").append(
 							$("<a>")
-								.attr("href", "detail.html?_id=" + item._id) 
+								.attr("href", "detail.html?detail=" + item.projectName) 
 								.text(item.projectName)
 					)	
 				);
