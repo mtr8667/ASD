@@ -73,7 +73,22 @@
 				
 			</ul>
 		</div>
-
+		<div data-role="fieldcontain">
+					<center>
+						<a href="#" data-role="button" id="getJSON" data-inline="true" data-mini="true" data-theme="e" >JSON</a>
+						<a href="#" data-role="button" id="getXML" data-inline="true" data-mini="true" data-theme="e" >XML</a>
+						<a href="#" data-role="button" id="getCSV" data-inline="true" data-mini="true" data-theme="e" >CSV</a>
+						
+						
+<!--						<a href="#" data-role="button" id="deleteProject" data-inline="true" data-mini="true" data-theme="e" >Clear Projects</a>    -->
+					</center>
+		</div>
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<ul data-role="listview" id="dataHolder" data-filter="true" data-inset="true" data-mini="true">
+				</ul>
+			</div>	
+		</div>
 		<div data-role="fieldcontain">
 			<div>
 					<center>

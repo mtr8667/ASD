@@ -531,3 +531,33 @@ $.ajax({
    "startDate": "2012-6-1",
    "jobNotes": "Remove old roof & gutters"
 }
+{
+   "_id": "section:Quick Reference",
+   "title": "Quick Reference",
+   "description": "quickly access you contact name, phone and email information",
+}
+{
+   "_id": "section:Additions",
+   "title": "Additions",
+   "description": "cape to colonial, master bedroom, second story",
+}
+{
+   "_id": "section:Basements",
+   "title": "Basements",
+   "description": "game room, extra kitchen, wine cellar, man cave",
+}
+{
+   "_id": "section:Kitchens",
+   "title": "Kitchens",
+   "description": "cabinets, tile back splash, custom islands, counter tops",
+}
+{
+   "_id": "section:Lavatories",
+   "title": "Lavatories",
+   "description": "bathrooms, vanities, tile showers, fixtures",
+}
+{
+   "_id": "section:Roofs",
+   "title": "Roofs",
+   "description": "weather shielding, turrets, slate",
+}

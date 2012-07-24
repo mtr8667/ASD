@@ -69,11 +69,67 @@
 
 		<!-- Catagory List -->
 		<div data-role="content">
-			<ul id="ulList" data-role="listview" data-inset="true" data-mini="true">
-				
+			<ul id="mainUl" data-role="listview" data-filter="true" data-inset="true" data-mini="true">
+				<li>
+					<a href="#contacts" data-add-back-btn="true" data-transition="fade">
+						<img src="a.png"/>
+						<h3>Contacts</h3>
+						<p>quick reference to contact information</p>
+					</a>
+				</li>
+				<li>
+					<a href="#additions" data-add-back-btn="true" data-transition="fade">
+						<img src="a.png"/>
+						<h3>Additions</h3>
+						<p>cape to colonial, master bedroom, second story</p>
+					</a>
+				</li>
+				<li>
+					<a href="#basements" data-add-back-btn="true" data-transition="fade">
+						<img src="b.png"/>
+						<h3>Basements</h3>
+						<p>game room, extra kitchen, wine cellar, man cave</p>
+					</a>
+				</li>	
+				<li>
+					<a href="#kitchens" data-add-back-btn="true" data-transition="fade">
+						<img src="k.png"/>
+						<h3>Kitchens</h3>
+						<p>cabinets, tile back splash, custom islands, counter tops</p>
+					</a>
+				</li>
+				<li>
+					<a href="#lavatories" data-add-back-btn="true" data-transition="fade">
+						<img src="l.png"/>
+						<h3>Lavatories</h3>
+						<p>bathrooms, vanities, tile showers, fixtures</p>
+					</a>
+				</li>
+				<li>
+					<a href="#roofs" data-add-back-btn="true" data-transition="fade">
+						<img src="r.png"/>
+						<h3>Roofs</h3>
+						<p>weather shielding, turrets, slate</p>
+					</a>
+				</li>
 			</ul>
 		</div>
-
+		<div data-role="fieldcontain">
+					<center>
+						<a href="#" data-role="button" id="getJSON" data-inline="true" data-mini="true" data-theme="e" >JSON</a>
+						<a href="#" data-role="button" id="getXML" data-inline="true" data-mini="true" data-theme="e" >XML</a>
+						<a href="#" data-role="button" id="getCSV" data-inline="true" data-mini="true" data-theme="e" >CSV</a>
+						
+						
+<!--						<a href="#" data-role="button" id="deleteProject" data-inline="true" data-mini="true" data-theme="e" >Clear Projects</a>    -->
+					</center>
+		</div>
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<ul data-role="listview" id="dataHolder" data-filter="true" data-inset="true" data-mini="true">
+				</ul>
+			</div>	
+		</div>
 		<div data-role="fieldcontain">
 			<div>
 					<center>

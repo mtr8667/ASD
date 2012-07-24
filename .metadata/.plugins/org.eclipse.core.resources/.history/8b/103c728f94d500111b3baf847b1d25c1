@@ -69,31 +69,8 @@ $("#home").on("pageinit", function() {
 
 
 // end on initial $(home)
-});
-var urlVars = function() {
-	var urlData = $($.mobile.activePage).data("url");
-	var urlParts = urlData.split("?");
-	// foo?a=1&b=2&c=3 etc...is my case its 10
-	var urlPairs = urlParts[1].split("&");
-	var urlValues = {};
-	for (var pair in urlPairs) {
-		var keyValue = urlPairs[pair].split("=");
-		var key = decodeURIComponent(keyValue[0]);
-		var value = decodeURIComponent(keyValue[1]);
-		urlValues[key] = value;
-	}
-	return urlValues;	
-};
+//});
 
-$("#sections").live("pageshow", function() {
-	// this is refering to this page
-	var job = urlVars()["job"];
-	console.log(job);
-//	$.couch.db("asdproject").view("app/additions",{
-	//	key: projectName
-//	});
-	var urlData = $($.mobile.activePage).data("url");
-});
 // ajax call to the couchDB files containing the additions value displaying in the #additionsList UL on the additions page I've changed this to try and create a collapsible list 
 $('#additions').on('pageinit', function () {   
 	$("#additionsList").empty();
@@ -329,8 +306,31 @@ $('#contacts').on('pageinit', function () {
 
 
 // new end of $(home)
+});
+var urlVars = function() {
+	var urlData = $($.mobile.activePage).data("url");
+	var urlParts = urlData.split("?");
+	// foo?a=1&b=2&c=3 etc...is my case its 10
+	var urlPairs = urlParts[1].split("&");
+	var urlValues = {};
+	for (var pair in urlPairs) {
+		var keyValue = urlPairs[pair].split("=");
+		var key = decodeURIComponent(keyValue[0]);
+		var value = decodeURIComponent(keyValue[1]);
+		urlValues[key] = value;
+	}
+	return urlValues;	
+};
 
-
+$("#jobs").live("pageshow", function() {
+	// this is refering to this page
+	var job = urlVars()["job"];
+	console.log(job);
+//	$.couch.db("asdproject").view("app/additions",{
+	//	key: projectName
+//	});
+	var urlData = $($.mobile.activePage).data("url");
+});
 
 $("#newProject").on('pageinit',function(){
 
