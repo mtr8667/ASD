@@ -532,32 +532,32 @@ $.ajax({
    "jobNotes": "Remove old roof & gutters"
 }
 {
-   "_id": "section:Quick Reference",
-   "title": "Quick Reference",
+   "_id": "section:contacts",
+   "title": "contacts",
    "description": "quickly access you contact name, phone and email information",
 }
 {
-   "_id": "section:Additions",
-   "title": "Additions",
-   "description": "cape to colonial, master bedroom, second story",
+   "_id": "section:additionss",
+   "title": "additions",
+   "description": "cape to colonial, master bedroom, second story"
 }
 {
-   "_id": "section:Basements",
-   "title": "Basements",
-   "description": "game room, extra kitchen, wine cellar, man cave",
+   "_id": "section:basements",
+   "title": "basements",
+   "description": "game room, extra kitchen, wine cellar, man cave"
 }
 {
-   "_id": "section:Kitchens",
-   "title": "Kitchens",
-   "description": "cabinets, tile back splash, custom islands, counter tops",
+   "_id": "section:kitchens",
+   "title": "kitchens",
+   "description": "cabinets, tile back splash, custom islands, counter tops"
 }
 {
-   "_id": "section:Lavatories",
-   "title": "Lavatories",
-   "description": "bathrooms, vanities, tile showers, fixtures",
+   "_id": "section:lavatories",
+   "title": "lavatories",
+   "description": "bathrooms, vanities, tile showers, fixtures"
 }
 {
-   "_id": "section:Roofs",
-   "title": "Roofs",
-   "description": "weather shielding, turrets, slate",
+   "_id": "section:roofs",
+   "title": "roofs",
+   "description": "weather shielding, turrets, slate"
 }

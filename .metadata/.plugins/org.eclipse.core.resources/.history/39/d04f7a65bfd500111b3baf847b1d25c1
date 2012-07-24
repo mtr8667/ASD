@@ -86,7 +86,7 @@ var urlVars = function() {
 		return urlValues;	
 };
 
-$("#sections").live("pageshow", function() {
+$("#sections").on("pageinit", function() {
 	var section = urlVars()["section"];
 //	console.log(section);
 	$.couch.db("asdproject").view("app/" + section, {

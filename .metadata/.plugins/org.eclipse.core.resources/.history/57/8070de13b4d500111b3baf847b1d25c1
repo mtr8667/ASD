@@ -89,24 +89,8 @@ var urlVars = function() {
 $("#sections").live("pageshow", function() {
 	var section = urlVars()["section"];
 //	console.log(section);
-	$.couch.db("asdproject").view("app/" + section, {
-		success: function(data) {
-			console.log(data);
-			$("#sectionList").empty();
-			$.each(data.rows, function(index, value){
-				var item = (value.value || value.doc);
-				$("#sectionList").append(
-					$("<li>").append(
-							$("<a>")
-								.attr("href", "detail.html?detail=" + item.projectName) 
-								.text(item.projectName)
-					)	
-				);
-			});
-			$("#sectionList").listview("refresh");
-		}
-	});
-//	var urlData = $($.mobile.activePage).data("url");
+	
+	var urlData = $($.mobile.activePage).data("url");
 	
 });  
 		

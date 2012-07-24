@@ -6,18 +6,18 @@
 <html lang="en">
 <head>
 	<!-- Document Title  -->
-	<title>Jobs</title>
+	<title>Detail</title>
 	<meta charset="utf-8">
 </head>
 
 <body>
 	
 <!-- home page -->
-	<div data-role="page" id="sections" data-add-back-btn="true">
+	<div data-role="page" id="detail">
 		
 		<!-- home page header -->
-		<div data-role="header" data-position="fixed"  data-theme="a" data-id="header">
-			<h1>Project Information</h1>
+		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
+			<h1>Project Detail</h1>
 		</div>
 		<!-- Call to Action -->
 		<div>
@@ -27,7 +27,7 @@
 		</div>
 		<div data-role="content">
 			<div data-role="fieldcontain">
-				<ul data-role="listview" id="sectionList" data-filter="true" data-inset="true" data-mini="true">
+				<ul data-role="listview" id="detailList" data-filter="true" data-inset="true" data-mini="true">
 				</ul>
 			</div>	
 		</div>

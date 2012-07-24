@@ -71,7 +71,7 @@ $("#home").on("pageinit", function() {
 // end on initial $(home)
 });
 
-var urlVars = function() {
+$("#sections").live("pageshow", function() {
 	var urlData = $($.mobile.activePage).data("url");
 	var urlParts = urlData.split("?");
 	// foo?a=1&b=2&c=3 etc...is my case its 10
@@ -83,32 +83,8 @@ var urlVars = function() {
 		var value = decodeURIComponent(keyValue[1]);
 		urlValues[key] = value;
 	}
-		return urlValues;	
-};
-
-$("#sections").live("pageshow", function() {
-	var section = urlVars()["section"];
-//	console.log(section);
-	$.couch.db("asdproject").view("app/" + section, {
-		success: function(data) {
-			console.log(data);
-			$("#sectionList").empty();
-			$.each(data.rows, function(index, value){
-				var item = (value.value || value.doc);
-				$("#sectionList").append(
-					$("<li>").append(
-							$("<a>")
-								.attr("href", "detail.html?detail=" + item.projectName) 
-								.text(item.projectName)
-					)	
-				);
-			});
-			$("#sectionList").listview("refresh");
-		}
-	});
-//	var urlData = $($.mobile.activePage).data("url");
-	
-});  
+		console.log(urlValues);
+});
 		
 // ajax call to the couchDB files containing the additions value displaying in the #additionsList UL on the additions page I've changed this to try and create a collapsible list 
 $('#additions').on('pageinit', function () {   
