@@ -109,6 +109,51 @@ $("#sections").live("pageshow", function() {
 //	var urlData = $($.mobile.activePage).data("url");
 	
 });  
+$("#detail").live("pageshow", function() {
+	var id = urlVars()["_id"];
+	console.log(id);
+	$.couch.db("asdproject").view('app/projects?key="' + id + '"', {
+		success: function(data) {
+			console.log(data);
+			
+			$("#detailList").empty();
+			$.each(data.rows, function(index, id){
+				var _id =			id.value._id;
+		   	    var _rev =		id.value._rev; 
+		   	    var projectName = id.value.projectName;
+    	    	var firstName = id.value.firstName;
+    	    	var lastName = id.value.lastName;
+    	    	var email = id.value.email;
+    	    	var phone = id.value.phone;
+    	    	var emailBest = id.value.emailBest;
+    	    	var cost = id.value.cost;
+    	    	var priority = id.value.priority;
+    	    	var startDate = id.value.startDate;
+    	    	var jobNotes = id.value.jobNotes;
+
+    	    		$("#detailList").append(
+    	    				$("<li>").attr("data-role", 
+    	    						"collapsible").attr("data-collapsed", "true")
+    	    						.append($("<h3>").text(projectName))
+    	    						.append($("<p>").text(_id))
+    	    						.append($("<p>").text(_rev))
+    	    						.append($("<p>").text(firstName))
+    	    						.append($("<p>").text(lastName))
+    	    						.append($("<p>").text(email))
+    	    						.append($("<p>").text(phone))
+    	    						.append($("<p>").text(emailBest))
+    	    						.append($("<p>").text(cost))
+    	    						.append($("<p>").text(priority))
+    	    						.append($("<p>").text(startDate))
+    	    						.append($("<p>").text(jobNotes))
+    	    				);
+    		});
+			$("#detailList").listview("refresh");
+		}
+	});
+//	var urlData = $($.mobile.activePage).data("url");
+	
+});  
 
 $("#newProject").on('pageinit',function(){
 

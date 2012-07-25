@@ -1,6 +1,6 @@
 function(doc) {
   if (doc._id.substr(0,9) ==="JobGenie:") {
-    emit(doc._id.substr(9), {
+    emit(doc._id, {
     	 "_id":			doc._id,
    	     "_rev":		doc._rev, 
     	 "projectType": doc.projectType,
