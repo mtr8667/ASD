@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Matthew Richter, Project 1 for ASD 1207 Full Sail University  -->
+<!-- June 27, 1212 -->
+
+<!-- HTML TAG --> 
+<html lang="en">
+<head>
+	<!-- Document Title  -->
+	<title>Detail</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	
+<!-- home page -->
+	<div data-role="page" id="detail" data-add-back-btn="true" data-transition="slide">
+		
+		<!-- home page header -->
+		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
+			<h1>Project Detail</h1>
+		</div>
+		<!-- Call to Action -->
+		<div>
+			<center>
+				<img src="logob.png"/>
+			</center>
+		</div>
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<ul data-role="listview" id="detailList" data-inset="true" data-mini="true">
+				</ul>
+			</div>	
+		</div>
+		<div data-role="content">
+				<div id="editDeleteButtons">
+					<center>
+						<a href="#" data-role="button" id="getProjects" data-inline="true" data-mini="true" data-theme="e" >Show Projects</a>
+						<a href="#" data-role="button" id="deleteProject" data-inline="true" data-mini="true" data-theme="e" >Clear Projects</a>
+						<a href="#newProject" data-role="button" id="newProjectLink"  data-inline="true" data-mini="true" data-theme="e" style="display:none;">New Project</a>
+					</center>
+				</div>
+		</div>
+		<div data-role="fieldcontain">
+			<div>
+					<center>
+						<p><small id="footer"> &copy; 2012 BBTmobi.com All Rights Reserved.</small></p>
+					</center>
+			</div>
+		</div>
+	
+		<!-- Home page Footer -->
+		<div data-role="footer" data-position="fixed" data-id="footer">
+				<div data-role="navbar">
+					<ul id="footerUl">
+						<li><a href="#home"  data-transition="slide">home</a></li>
+					</ul>			
+				</div>
+		</div>
+	
+	</div>
+	<!-- JavaScript under here -->
+</body>
+</html>

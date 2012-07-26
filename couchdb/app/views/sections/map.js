@@ -4,6 +4,7 @@ function(doc) {
     	 "_id":			doc._id,
     	 "_rev":		doc._rev,
     	 "title": 		doc.title,
+    	 "name":		doc.name,
     	 "description": doc.description
     });
   }
