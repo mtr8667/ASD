@@ -1,7 +1,7 @@
 // Matthew RIchter 
 // ASD - Full Sail University
-// Project 3
-// July 19, 2012
+// Project 4
+// July 22, 2012
 
 // 
 //var parseProjectForm = function(data){
@@ -145,16 +145,32 @@ $("#detail").live("pageshow", function() {
     	    						.append($("<p>").text(priority))
     	    						.append($("<p>").text(startDate))
     	    						.append($("<p>").text(jobNotes))
-    	    				);
-    	    		
-    		});
+/*    	    			
+    	    		)
+    	    				.append($("<li>").append(
+    	    						$("<a>")	
+    	    							.attr('href', 'edit.html?_id=' + id  ) 
+    	    								.attr('id', 'editProject')
+    	    									.text("Edit Project"))
+    	    						)
+    	    				.append($("<li>").append(
+    	    						$("<a>")	
+    	    							.attr('href', 'edit.html?_id=' + id ) 
+    	    							.attr('id', 'deleteProject')
+    	    							.text("Delete Project"))
+    	    						
+    	    						);
+    	    				
+*/  
+    	    		);
+			});
 			$("#detailList").listview("refresh");
 
 			$("#editDeleteButtons").empty();
 			$("#editDeleteButtons").append(
 					$("<li>").append(
 						$("<a>")	
-						.attr('href', 'newProject.html?_id=' + id  ) 
+						.attr('href', 'edit.html?_id=' + id  ) 
 						.attr('id', 'editProject')
 						.text("Edit Project")
 					)
@@ -162,7 +178,7 @@ $("#detail").live("pageshow", function() {
 			$("#editDeleteButtons").append(
 					$("<li>").append(
 						$("<a>")	
-						.attr('href', 'newProject.html?_id=' + id ) 
+						.attr('href', 'edit.html?_id=' + id ) 
 						.attr('id', 'deleteProject')
 						.text("Delete Project")
 						
@@ -177,257 +193,51 @@ $("#detail").live("pageshow", function() {
 	
 });  
 
-$("#newProject").live("pageshow", function() {
+$("#edit").live("pageshow", function() {
 //$("#editProject").on("click", function(){
-	var id = urlVars()["_id"];
-	console.log(id);
-	$.couch.db("asdproject").view('app/projects?key="' + id + '"', {
+	var ide = urlVars()["_id"];
+	console.log(ide);
+	$.couch.db("asdproject").view('app/projects?key="' + ide + '"', {
 		success: function(data) {
 			console.log(data);
 		
 	//		$("#projectForm").empty();
-/*
-			$.each(data.rows, function(index, id){
-				var _id =			id.value._id;
-		   	    var _rev =		id.value._rev; 
-		   	    var projectName = id.value.projectName;
-    	    	var firstName = id.value.firstName;
-    	    	var lastName = id.value.lastName;
-    	    	var email = id.value.email;
-    	    	var phone = id.value.phone;
-    	    	var emailBest = id.value.emailBest;
-    	    	var cost = id.value.cost;
-    	    	var priority = id.value.priority;
-    	    	var startDate = id.value.startDate;
-    	    	var jobNotes = id.value.jobNotes;
 
-    	    		$("#detailList").append(
-    	    				$("<li>").attr("data-role", 
-    	    						"collapsible").attr("data-collapsed", "true")
-    	    						.append($("<h3>").text(projectName))
-    	    						.append($("<p>").text(_id))
-    	    						.append($("<p>").text(_rev))
-    	    						.append($("<p>").text(firstName))
-    	    						.append($("<p>").text(lastName))
-    	    						.append($("<p>").text(email))
-    	    						.append($("<p>").text(phone))
-    	    						.append($("<p>").text(emailBest))
-    	    						.append($("<p>").text(cost))
-    	    						.append($("<p>").text(priority))
-    	    						.append($("<p>").text(startDate))
-    	    						.append($("<p>").text(jobNotes))
-    	    				);
+			$.each(data.rows, function(index, ide){
+				var _id =			ide.value._id;
+		   	    var _rev =		ide.value._rev; 
+		   	    var projectName = ide.value.projectName;
+    	    	var firstName = ide.value.firstName;
+    	    	var lastName = ide.value.lastName;
+    	    	var email = ide.value.email;
+    	    	var phone = ide.value.phone;
+    	    	$("#editForm")
+    	    	
+    	    	$("pname").text(projectName);
+    			$("fname").text(firstName);
+    			$("lname").text(lastName);
+    			$("email").text(email);
+    			$("phone").text(phone);
+    	    	
+ /*
+    	    		$("#editForm")
+//    	    						.append($("<p>").text(_id))
+//    	    						.append($("<p>").text(_rev))
+    	    						.append($("jobname").text(projectName))
+    	    						.append($("firstname").text(firstName))
+    	    						.append($("lastname").text(lastName))
+    	    						.append($("email").text(email))
+    	    						.append($("phone").text(phone))
+  */  	    				
+    	    				
     	    		
     		});
-			$("#detailList").listview("refresh");
+//			$("#editForm").listview("refresh");
 
-*/			
+			
 		}
 	});	
 //});
 });
 //});
-/*
-$("#newProject").on('pageinit',function(){
-
-	var element = $(document),
-		projectform = $( "#projectForm" ),
-		formerrorslink = $("#formerrorslink")
-	;
-
-
-
-// function to allow us to pull a project from local storage and edit an item
-function editItem(){
-		var value = localStorage.getItem(this.key);
-		var item = JSON.parse(value);
-		// show the add project form
-		toggleControls("off");
-		// pull in the data of the current project from local storage
-		$("project").value 	= item.project[1];
-		$("pname").value 	= item.pname[1];
-		$("fname").value 	= item.fname[1];
-		$("lname").value 		= item.lname[1];
-		$("email").value 		= item.email[1];
-		$("phone").value 		= item.phone[1];
-		var radios = document.forms[0].cost;
-		for(var i=0; i<radios.length; i++){
-			if(radios[i].value == "low" && item.cost[1] == "low"){
-				radios[i].setAttribute("checked", "checked");
-			}else if(radios[i].value == "medium" && item.cost[1] == "medium"){
-				radios[i].setAttribute("checked", "checked");
-			}else if(radios[i].value == "high" && item.cost[1] == "high"){
-				radios[i].setAttribute("checked", "checked");
-			}
-		}
-		if(item.emailOkay[1] == "Yes"){
-			$("emailOkay").attr("checked", "checked");
-		}
-		$("priority").value = item.priority[1];
-		$("startDate").value = item.startDate[1];
-		$("jobNotes").value = item.jobNotes[1];
-		// remove the initial eventListener from the save project button
-		save.removeEventListener("click", saveLocal);
-		// change save project buttom value to say edit project button
-		$("saveProject").value = "Edit Project";
-		var editSaveProject = $("saveProject");
-		// saving key value in this function as a property of the editSaveProject event 
-		// so we can use that value when we save the edited project
-		editSaveProject.addEventListener("click", validate);
-		editSaveProject.key = this.key;
-	}
-
-// 
-function deleteItem(){
-		var ask = confirm("Are you sure you want to delete this project?");
-		if(ask){
-			localStorage.removeItem(this.key);
-			window.location.reload();
-		}else{
-			alert("Project was not deleted.");
-		}
-	}
-
-//
-
-$("#deleteProject").on("click", deleteProject);
-// delete project functions
-	function deleteProject(){
-		if(localStorage.length === 0){
-			alert("There are no projects to delete.")
-		}else{
-			localStorage.clear();
-			alert("All projects have been deleted!");
-			window.location.reload();
-			return false;
-		}
-	}
- 
-// Validate function for the form
-projectform.validate({
-		invalidHandler: function(form, validator){
-			// this bring up the pop up error dialog
-			formerrorslink.click();
-			var html = ' ';
-			for(var key in validator.submitted){
-				var label = $('label[for^="'+ key +'"]').not('[generated]');
-				var legend = label.closest('fieldset').find('.ui-controlgroup-label');
-				var fieldName = legend.length ? legend.text() : label.text();
-				html += '<li>' + fieldName + '</li>';
-			};
-			$('#showerrors ul').html(html);
-		},
-		submitHandler: function(){
-			var 	data = projectform.serializeArray();
-			parseProjectForm(data);
-			
-		}
-	});
-var parseProjectForm = function(data){
-// uses form data here 
-	//console.log(data);
-	//localStorage.setItem(key, JSON.stringify(item));	
-	$("parseProjectForm").data(data);
-		alert("Your project has been saved successfully!");		
-	};
-// the key is only generated when we are editing a project so if there is no key its a new project
-function saveLocal(key){
-		if(!key){
-			var 	id 						= Math.floor(Math.random()*10000001);
-		}else{
-			//set the id to the existing key we're editing so the data will be modified and we'll save over the original data
-			//this key has been passed along from the editSaveProject eventListener to the validate function then passed here
-			// into storeLocal function
-			id = key;
-		}
-		// get all the form field values and store them in an object.
-		// the object properties contain an array with the form label and input value.
-		getSelectedRadio();
-		getCheckboxValue();
-		var	item 					= {};
-				item.project		= ["Project Type:", $("project").value];
-				item.pname 			= ["Project Name:", $("pname").value];
-				item.fname 			= ["First Name:", $("fname").value];
-				item.lname 			= ["Last Name:", $("lname").value];
-				item.email 			= ["Email:", $("email").value];
-				item.phone 			= ["Phone:", $("phone").value];			
-				item.emailOkay 		= ["Communicate Via email:", emailOkay];
-				item.cost			= ["Price per sq ft.", cost];			
-				item.priority 		= ["Priority", $("priority").value];
-				item.startDate		= ["Start Date", $("startDate").value];
-				item.jobNotes 		= ["Job Notes", $("jobNotes").value];
-		// Save data into local storage : use stringify to convert our object to a string.
-		localStorage.setItem(id, JSON.stringify(item));	
-		alert("Your project has been saved successfully!");			
-	} 
-
-
-});
-*/
-/*
-$("#feedback").on('pageinit',function(){
-
-});
-
-$("#jobreporting").on('pageinit',function(){
-
-});
-
-$("#underconstruction").on('pageinit',function(){
-
-});
-
-$("#additions").on('pageinit',function(){
-
-});
-
-*/
-
-// Just above is the JavaScript I used for the Gold MIU app - below is my attempt at jQuery ... here we go
-// function for document ready - this will wrap our entire code.
-
-//$(function(){
-	
-// Find the value of a selected radial button ,
-	// 
-	// I believe these are now being handled by the plugin
-
-/*
-	function getSelectedRadio(){
-		var radios = document.forms[0].cost;
-		for( var i=0; i < radios.length; i++){
-			if(radios[i].checked){
-			cost = radios[i].value;
-			}
-		}
-	}
-	function getCheckboxValue(){
-		if($("emailOkay").checked){
-			emailOkay	=	$("emailOkay").value;
-		}else{
-			emailOkay 	=	"No"
-		}
-	}	
-
-*/
-
-
-
-/*
-
-	// Set link & submit Click Events 
-
- 	var showProjectsLink = ge("showProjectsLink");
- 	showProjectsLink.addEventListener("click", getProjects);
- 	var clearProjectsLink = ge('clearProjectsLink');
- 	clearProjectsLink.addEventListener("click", deleteProject); 
- 	var save = ge("saveProject");
- 	save.addEventListener("click", validate);
-
-*/	
-		
-	
-	
-	
-
 
