@@ -4,9 +4,11 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/mrichter/Documents/Fullsail/github/VFW-project4/images"/>
+			<item value="/Users/mrichter/Documents/Fullsail/github/VFW-project4/JS"/>
+			<item value="/Users/mrichter/Documents/Fullsail/github/VFW-project4"/>
 			<item value="/Users/mrichter/Documents/Fullsail/fullsail/ASDtest/project1/js"/>
 			<item value="/Users/mrichter/Downloads/daleharvey-jquery.couch.js-a27a9db"/>
-			<item value="/Users/mrichter/Documents/Fullsail/fullsail/ASDtest/project1/asdfinal/app/_attachments"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">

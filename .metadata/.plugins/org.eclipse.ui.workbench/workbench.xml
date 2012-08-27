@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
-<window height="1326" width="983" x="795" y="22">
+<window height="1326" width="1450" x="1069" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -15,7 +15,7 @@
 <coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -26,7 +26,7 @@
 <coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -45,45 +45,75 @@
 <part id="6"/>
 <part id="7"/>
 <part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="main.js" partName="main.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/main.js" title="main.js" tooltip="couchdb/app/_attachments/main.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/main.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3212" selectionTopPixel="836"/>
+<editorState selectionHorizontalPixel="0" selectionLength="79" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" partName="index.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/index.html" title="index.html" tooltip="couchdb/app/_attachments/index.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3200" selectionTopPixel="1218"/>
-</editor>
-<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sample.js" partName="sample.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/sample.js" title="sample.js" tooltip="couchdb/app/_attachments/sample.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/sample.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="167" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" partName="map.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/views/projects/map.js" title="map.js" tooltip="couchdb/app/views/projects/map.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/views/projects/map.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="491" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="style.css" partName="style.css" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/style.css" title="style.css" tooltip="couchdb/app/_attachments/style.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/style.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8472" selectionTopPixel="747"/>
-</editor>
-<editor id="org.eclipse.wst.html.core.htmlsource.source" name="oldindex.html" partName="oldindex.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/oldindex.html" title="oldindex.html" tooltip="couchdb/app/_attachments/oldindex.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/oldindex.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="47" selectionOffset="2930" selectionTopPixel="810"/>
-</editor>
-<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" partName="map.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/views/lavatories/map.js" title="map.js" tooltip="couchdb/app/views/lavatories/map.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/views/lavatories/map.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="412" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1053" selectionTopPixel="465"/>
 </editor>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="sections.html" partName="sections.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/sections.html" title="sections.html" tooltip="couchdb/app/_attachments/sections.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/sections.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="347" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="349" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="detail.html" partName="detail.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/detail.html" title="detail.html" tooltip="couchdb/app/_attachments/detail.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/detail.html"/>
-<editorState selectionHorizontalPixel="8" selectionLength="0" selectionOffset="569" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="93" selectionOffset="16" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="couchapp.rc" partName="couchapp.rc" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/couchapp.rc" title="couchapp.rc" tooltip="couchdb/couchapp.rc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/couchapp.rc"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="186" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="couchapp.json" partName="couchapp.json" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/couchapp.json" title="couchapp.json" tooltip="couchdb/app/couchapp.json" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/couchapp.json"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="_id" partName="_id" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_id" title="_id" tooltip="couchdb/app/_id" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_id"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="newProject.html" partName="newProject.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/newProject.html" title="newProject.html" tooltip="couchdb/app/_attachments/newProject.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/newProject.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="509" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="edit.html" partName="edit.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/edit.html" title="edit.html" tooltip="couchdb/app/_attachments/edit.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/edit.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="110" selectionOffset="915" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.css.core.csssource.source" name="style.css" partName="style.css" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/style.css" title="style.css" tooltip="couchdb/app/_attachments/style.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/style.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="45" selectionOffset="3" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="addProject.html" partName="addProject.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/addProject.html" title="addProject.html" tooltip="couchdb/app/_attachments/addProject.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/addProject.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1132" selectionTopPixel="117"/>
+</editor>
+<editor id="org.eclipse.wst.css.core.csssource.source" name="stylevfw.css" partName="stylevfw.css" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/stylevfw.css" title="stylevfw.css" tooltip="couchdb/app/_attachments/stylevfw.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/stylevfw.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="48" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="newProjectOld.html" partName="newProjectOld.html" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/newProjectOld.html" title="newProjectOld.html" tooltip="couchdb/app/_attachments/newProjectOld.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/newProjectOld.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3047" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="mainvfw.js" partName="mainvfw.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/mainvfw.js" title="mainvfw.js" tooltip="couchdb/app/_attachments/mainvfw.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/mainvfw.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="79" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="json.js" partName="json.js" path="/Volumes/Macintosh HD 2/Fullsail/github/ASD/couchdb/app/_attachments/json.js" title="json.js" tooltip="couchdb/app/_attachments/json.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/couchdb/app/_attachments/json.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="79" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -223,164 +253,169 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/_attachments/main.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/index.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/sections/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/sections.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/jobs.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/couchdb/app/_attachments/style.css"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/detail.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/roofs/map.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/views/projects/map.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/newProject.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/addProject.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/_attachments/mainvfw.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/couchdb/app/_attachments/json.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/couchdb/app/_attachments/style.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/couchdb/app/_attachments/stylevfw.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/couchdb/couchapp.rc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/addProject.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/edit.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/couchdb/app/_attachments/index.html"/>
 </editors>
-<item historyLabel="sections.html" index="3">
-<position info="not_deleted" x="548" y="0"/>
+<item historyLabel="newProject.html" index="2">
+<position info="not_deleted" x="509" y="0"/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="2130" y="0"/>
 </item>
 <item historyLabel="main.js" index="0">
-<position info="not_deleted" x="2886" y="1"/>
+<position info="not_deleted" x="8189" y="0"/>
 </item>
-<item historyLabel="index.html" index="1">
-<position info="not_deleted" x="2397" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3043" y="0"/>
-</item>
-<item historyLabel="sections.html" index="3">
-<position info="not_deleted" x="240" y="0"/>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="2341" y="0"/>
 </item>
 <item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3698" y="0"/>
+<position info="not_deleted" x="8189" y="0"/>
 </item>
-<item historyLabel="sections.html" index="3">
-<position info="not_deleted" x="240" y="0"/>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="2341" y="0"/>
 </item>
-<item historyLabel="index.html" index="1">
-<position info="not_deleted" x="3272" y="24"/>
+<item historyLabel="mainvfw.js" index="5">
+<position info="not_deleted" x="11764" y="0"/>
 </item>
-<item historyLabel="sections.html" index="3">
-<position info="not_deleted" x="429" y="0"/>
+<item historyLabel="addProject.html" index="4">
+<position info="not_deleted" x="3658" y="0"/>
 </item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3698" y="0"/>
-</item>
-<item historyLabel="style.css" index="5">
-<position info="not_deleted" x="7718" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3698" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3711" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="4239" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="4237" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3868" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3767" y="0"/>
-</item>
-<item historyLabel="map.js" index="2">
-<position info="not_deleted" x="202" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3767" y="0"/>
-</item>
-<item historyLabel="sections.html" index="3">
-<position info="not_deleted" x="347" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3684" y="0"/>
-</item>
-<item historyLabel="jobs.html" index="4">
-<position info="not_deleted" x="0" y="1577"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3684" y="0"/>
-</item>
-<item historyLabel="jobs.html" index="4">
-<position info="not_deleted" x="0" y="1577"/>
-</item>
-<item historyLabel="detail.html" index="6">
-<position info="not_deleted" x="242" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3684" y="0"/>
-</item>
-<item historyLabel="detail.html" index="6">
+<item historyLabel="json.js" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="sections.html" index="3">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="addProject.html" index="4">
+<position info="not_deleted" x="3658" y="0"/>
 </item>
-<item historyLabel="detail.html" index="6">
-<position info="not_deleted" x="297" y="0"/>
+<item historyLabel="json.js" index="6">
+<position info="not_deleted" x="10773" y="0"/>
 </item>
-<item historyLabel="sections.html" index="3">
-<position info="not_deleted" x="299" y="24"/>
+<item historyLabel="addProject.html" index="4">
+<position info="not_deleted" x="3185" y="0"/>
 </item>
-<item historyLabel="detail.html" index="6">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="mainvfw.js" index="5">
+<position info="not_deleted" x="5957" y="0"/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="2177" y="0"/>
+</item>
+<item historyLabel="mainvfw.js" index="5">
+<position info="not_deleted" x="5065" y="0"/>
+</item>
+<item historyLabel="addProject.html" index="4">
+<position info="not_deleted" x="3352" y="0"/>
+</item>
+<item historyLabel="mainvfw.js" index="5">
+<position info="not_deleted" x="11699" y="11"/>
+</item>
+<item historyLabel="addProject.html" index="4">
+<position info="not_deleted" x="3352" y="0"/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="2177" y="0"/>
 </item>
 <item historyLabel="main.js" index="0">
+<position info="not_deleted" x="0" y="79"/>
+</item>
+<item historyLabel="mainvfw.js" index="5">
+<position info="not_deleted" x="79" y="0"/>
+</item>
+<item historyLabel="json.js" index="6">
+<position info="not_deleted" x="79" y="0"/>
+</item>
+<item historyLabel="mainvfw.js" index="5">
+<position info="not_deleted" x="79" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="0" y="79"/>
+</item>
+<item historyLabel="detail.html" index="1">
+<position info="not_deleted" x="16" y="93"/>
+</item>
+<item historyLabel="addProject.html" index="4">
+<position info="not_deleted" x="109" y="0"/>
+</item>
+<item historyLabel="detail.html" index="1">
+<position info="not_deleted" x="16" y="93"/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="2177" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="0" y="79"/>
+</item>
+<item historyLabel="detail.html" index="1">
+<position info="not_deleted" x="16" y="93"/>
+</item>
+<item historyLabel="addProject.html" index="4">
+<position info="not_deleted" x="109" y="0"/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="2177" y="0"/>
+</item>
+<item historyLabel="main.js" index="0">
+<position info="not_deleted" x="0" y="79"/>
+</item>
+<item historyLabel="mainvfw.js" index="5">
+<position info="not_deleted" x="79" y="0"/>
+</item>
+<item historyLabel="style.css" index="7">
 <position/>
 </item>
-<item historyLabel="detail.html" index="6">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="stylevfw.css" index="8">
+<position/>
 </item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="4136" y="0"/>
+<item historyLabel="mainvfw.js" index="5">
+<position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="style.css" index="5">
-<position info="not_deleted" x="8472" y="0"/>
+<item historyLabel="couchapp.rc" index="9">
+<position info="not_deleted" x="125" y="49"/>
 </item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="4301" y="0"/>
+<item historyLabel="addProject.html" index="10">
+<position info="not_deleted" x="109" y="0"/>
 </item>
-<item historyLabel="index.html" index="1">
-<position info="not_deleted" x="3198" y="0"/>
+<item historyLabel="edit.html" index="11">
+<position info="not_deleted" x="915" y="110"/>
 </item>
-<item historyLabel="detail.html" index="6">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="addProject.html" index="10">
+<position info="not_deleted" x="109" y="0"/>
 </item>
-<item historyLabel="sections.html" index="3">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="index.html" index="12">
+<position info="not_deleted" x="729" y="228"/>
 </item>
-<item historyLabel="detail.html" index="6">
-<position info="not_deleted" x="569" y="0"/>
+<item historyLabel="addProject.html" index="10">
+<position info="not_deleted" x="1132" y="0"/>
 </item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="4301" y="0"/>
+<item historyLabel="index.html" index="12">
+<position info="not_deleted" x="1053" y="0"/>
 </item>
-<item historyLabel="index.html" index="1">
-<position info="not_deleted" x="3198" y="0"/>
+<item historyLabel="addProject.html" index="10">
+<position info="not_deleted" x="1132" y="0"/>
 </item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="4132" y="0"/>
+<item historyLabel="index.html" index="12">
+<position info="not_deleted" x="1053" y="0"/>
 </item>
-<item historyLabel="map.js" index="2">
-<position info="not_deleted" x="202" y="0"/>
+<item historyLabel="addProject.html" index="10">
+<position info="not_deleted" x="1132" y="0"/>
 </item>
-<item historyLabel="map.js" index="2">
-<position info="not_deleted" x="95" y="42"/>
+<item historyLabel="index.html" index="12">
+<position info="not_deleted" x="1053" y="0"/>
 </item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3212" y="0"/>
+<item historyLabel="addProject.html" index="10">
+<position info="not_deleted" x="1132" y="0"/>
 </item>
-<item historyLabel="map.js" index="7">
-<position info="not_deleted" x="319" y="0"/>
-</item>
-<item historyLabel="main.js" index="0">
-<position info="not_deleted" x="3212" y="0"/>
-</item>
-<item historyLabel="map.js" index="8">
-<position info="not_deleted" x="491" y="0"/>
-</item>
-<item active="true" historyLabel="index.html" index="1">
-<position info="not_deleted" x="3198" y="0"/>
+<item active="true" historyLabel="index.html" index="13">
+<position info="not_deleted" x="1053" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -388,9 +423,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -398,55 +430,54 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/roofs/map.js">
-<persistable path="/couchdb/app/views/roofs/map.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="json.js" tooltip="couchdb/app/_attachments/json.js">
+<persistable path="/couchdb/app/_attachments/json.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="detail.html" tooltip="couchdb/app/_attachments/detail.html">
-<persistable path="/couchdb/app/_attachments/detail.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="mainvfw.js" tooltip="couchdb/app/_attachments/mainvfw.js">
+<persistable path="/couchdb/app/_attachments/mainvfw.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="sections.html" tooltip="couchdb/app/_attachments/sections.html">
-<persistable path="/couchdb/app/_attachments/sections.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="newProjectOld.html" tooltip="couchdb/app/_attachments/newProjectOld.html">
+<persistable path="/couchdb/app/_attachments/newProjectOld.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/lavatories/map.js">
-<persistable path="/couchdb/app/views/lavatories/map.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="stylevfw.css" tooltip="couchdb/app/_attachments/stylevfw.css">
+<persistable path="/couchdb/app/_attachments/stylevfw.css"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/sections/map.js">
-<persistable path="/couchdb/app/views/sections/map.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="oldindex.html" tooltip="couchdb/app/_attachments/oldindex.html">
-<persistable path="/couchdb/app/_attachments/oldindex.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="oldmain.js" tooltip="couchdb/app/_attachments/oldmain.js">
-<persistable path="/couchdb/app/_attachments/oldmain.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="addProject.html" tooltip="couchdb/app/_attachments/addProject.html">
+<persistable path="/couchdb/app/_attachments/addProject.html"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="style.css" tooltip="couchdb/app/_attachments/style.css">
 <persistable path="/couchdb/app/_attachments/style.css"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="types.html" tooltip="couchdb/app/_attachments/types.html">
-<persistable path="/couchdb/app/_attachments/types.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="editProject.html" tooltip="couchdb/app/_attachments/editProject.html">
+<persistable path="/couchdb/app/_attachments/editProject.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="jquery.couch.js" tooltip="couchdb/app/_attachments/jquery.couch.js">
-<persistable path="/couchdb/app/_attachments/jquery.couch.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/sections/map.js">
+<persistable path="/couchdb/app/views/sections/map.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="newProject.html" tooltip="couchdb/app/_attachments/newProject.html">
+<persistable path="/couchdb/app/_attachments/newProject.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="_id" tooltip="couchdb/app/_id">
+<persistable path="/couchdb/app/_id"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="couchapp.json" tooltip="couchdb/app/couchapp.json">
+<persistable path="/couchdb/app/couchapp.json"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/projects/map.js">
 <persistable path="/couchdb/app/views/projects/map.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sample.js" tooltip="couchdb/app/_attachments/sample.js">
-<persistable path="/couchdb/app/_attachments/sample.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="couchapp.rc" tooltip="couchdb/couchapp.rc">
+<persistable path="/couchdb/couchapp.rc"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="couchdb/app/_attachments/index.html">
-<persistable path="/couchdb/app/_attachments/index.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/additions/map.js">
+<persistable path="/couchdb/app/views/additions/map.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="main.js" tooltip="couchdb/app/_attachments/main.js">
-<persistable path="/couchdb/app/_attachments/main.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/contacts/map.js">
-<persistable path="/couchdb/app/views/contacts/map.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="map.js" tooltip="couchdb/app/views/basements/map.js">
+<persistable path="/couchdb/app/views/basements/map.js"/>
 </file>
 </mruList>
 </workbench>
